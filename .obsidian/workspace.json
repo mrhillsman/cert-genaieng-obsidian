@@ -1,0 +1,244 @@
+{
+  "main": {
+    "id": "253e0d2681968753",
+    "type": "split",
+    "children": [
+      {
+        "id": "3bfd3bc90672d771",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e66a0d8c28ee701c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07-data-analysis-with-python/module02/Data Wrangling.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Data Wrangling"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d3f0474704053cca",
+    "type": "split",
+    "children": [
+      {
+        "id": "471374dbe0c6205d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0857597540d23c4b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e3026325f627e579",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2fa80f913c41fa89",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "03c22f7e78a99d91",
+    "type": "split",
+    "children": [
+      {
+        "id": "573a08fcc66e4475",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bcb389999184305b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tokenizer.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Tokenizer"
+            }
+          },
+          {
+            "id": "009fec182476d18a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tokenizer.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Tokenizer"
+            }
+          },
+          {
+            "id": "09584a24e9adf9d3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "697f6e56a787b539",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "07-data-analysis-with-python/Importing Dataset.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Importing Dataset"
+            }
+          },
+          {
+            "id": "812485fd1a7171de",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "140b6fb54abc934d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "32671b03af7d5987",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 417.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "zk-prefixer:Create new unique note": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "0857597540d23c4b",
+  "lastOpenFiles": [
+    "07-data-analysis-with-python/module01/Data Analysis with Python.md",
+    "07-data-analysis-with-python/module02/Data Wrangling.md",
+    "Pasted Image 20250120222119_580.png",
+    "07-data-analysis-with-python/module02/normalization03.png",
+    "07-data-analysis-with-python/module02/normalization02.png",
+    "07-data-analysis-with-python/module02/normalization01.png",
+    "07-data-analysis-with-python/module02/normalization00.png",
+    "Writing a ChatPromptTemplate.md",
+    "Tokenizer.md",
+    "excalidraw/drawing 2025-01-Mo 10.01.32.excalidraw.md",
+    "07-data-analysis-with-python/module01/Importing Dataset.md",
+    "' column 1 ',column 2', 'column 3'.md",
+    "07-data-analysis-with-python/module01/Cheat Sheet - Importing Data Sets.md",
+    "07-data-analysis-with-python/module04/Model Development.md",
+    "07-data-analysis-with-python/module06/Untitled.md",
+    "07-data-analysis-with-python/module06",
+    "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
+    "07-data-analysis-with-python/module05",
+    "07-data-analysis-with-python/module03/Exploratory Data Analysis.md",
+    "07-data-analysis-with-python/module04",
+    "07-data-analysis-with-python/module03",
+    "07-data-analysis-with-python/module02/normalization02.png.crdownload",
+    "07-data-analysis-with-python/module02/View_Job_Posting_Details.pdf",
+    "07-data-analysis-with-python/module02/View_Job_Posting_Details.pdf.crdownload",
+    "07-data-analysis-with-python/module02/normalization01.png.crdownload",
+    "07-data-analysis-with-python/module02/normalization00.png.crdownload",
+    "excalidraw/drawing 2025-00-Mo 10.00.46.excalidraw.md",
+    "excalidraw",
+    "07-data-analysis-with-python/General Notes.md",
+    "07-data-analysis-with-python/output.md",
+    "07-data-analysis-with-python/Review-Introduction.md",
+    "Untitled.canvas",
+    "202501161848.md",
+    "excalidraw/drawing 2025-47-Th 06.47.54.excalidraw.md",
+    "excalidraw/drawing 2025-15-Th 03.15.26.excalidraw.md"
+  ]
+}
