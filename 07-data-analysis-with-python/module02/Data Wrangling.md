@@ -144,6 +144,7 @@ Below the Status feature is currently an object type (string) and for further an
 | Michael | citizen     | ... | 1       | 0           |
 | Juan    | non-citizen | ... | 0       | 1           |
 | Janice  | citizen     | ..  | 1       | 0           |
+
 ```python
 pd.get_dummies(df["status"])
 ```
@@ -186,6 +187,7 @@ df = pd.concat([df, dummy_variable], axis=1)
 ```
 
 ### Additional Notes and Code
+
 ```python
 # update column rounding values to nearest 2 decimals  
 df[['column']] = np.round(df[['column']], 2)
@@ -204,8 +206,5 @@ df['column_name'].value_counts().idxmax()
 df['column_name'].replace(np.nan, value_to_use, inplace=True)
 
 df.rename(columns={"oldname": "newname", "oldname2": "newname2"}, inplace=True)
-
-
-
 
 ```
