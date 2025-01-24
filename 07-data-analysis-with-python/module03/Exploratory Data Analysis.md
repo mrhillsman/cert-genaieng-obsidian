@@ -184,7 +184,7 @@ The chi-square test involves formulating two hypotheses:
 
 ##### Formula
 $$
-\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}
+\Large{\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}}
 $$
 
 where:
@@ -193,7 +193,7 @@ where:
 - $E_i$ is the expected frequency for feature $i$, calculated as:
 
 $$
-E_i = \frac{(\text{row total} \times \text{column total})}{\text{grand total}}
+\Large{E_i = \frac{(\text{row total} \times \text{column total})}{\text{grand total}}}
 $$
 
 The sum is taken over all cells in the contingency table.
@@ -202,7 +202,7 @@ The calculated chi-square statistic is then compared to a critical value from th
 
 degrees of freedom
 $$
-df = (r-1)*(c-1)
+\Large{df = (r-1)*(c-1)}
 $$
 where $r$ is the number of rows and $c$ is the number of columns
 ##### [[Chi-Square Test Examples]]
