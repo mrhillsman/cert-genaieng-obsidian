@@ -3,7 +3,7 @@
 >relating one or more independent features to dependent features
 
 the more relevant features you have the more accurate your model is, why?, consider you have two almost identical products like cars, pink cars sell for significantly less, if the features (independent - the input) does not include color, the model will predict the same price even though the pink cars will sell for much less
-### Linear Regression / Multiple Linear Regression
+## Linear Regression / Multiple Linear Regression
 single independent feature v multiple independent features
 
 $\Large{x_i}$ -> linear regression -> prediction
@@ -79,13 +79,142 @@ yhat = lm.predict(Z)
 # price = lm.intercept_ + b_1 * horsepower + b_2 * curb-weight + b_3 * engine-size + b_4 * highway-mpg
 # \hat{y} = b_0 + b_1x_1 + b_2x_2 + b_3x_3 + b_4x_4
 ```
-#### [[Thoughts on Linear Regression]]
-### Model Evaluation using Visualization
 
-### Polynomial Regression and Pipelines
+#### [[Thoughts on Linear Regression|Additional Thoughts on Linear Regression]]
+## Model Evaluation using Visualization
+### Regression Plot
+Gives a good estimate of:
+- The relationship between two variables
+- The strength of the correlation
+- The direction of the relationship (positive or negative)
 
-### Measure for In-Sample Evaluation
+```python
+import seaborn as sbn
+from mathplotlib import pyplot as plt
 
-### Prediction and Decision Making
+# x is the independent variable/feature, y is the dependent variable/target
+sbn.regplot(x='highway-mpg', y='price', data=df)
+plt.ylim(0,)
+```
+
+### Residual Plot
+Represents the **error**. The difference (error) is obtained by subtracting the predicted value from the actual value ($\Large{Y_0-\hat{Y}_0})$ then plot the **error** on the vertical axis with the dependent variable as the [[Residual Plot Horizontal Axis|horizontal axis]]
+
+We expect the results to have 0 mean distributed evenly around the x axis with similar variance:
+
+![[videoframe_113976.png]]
+
+When the residual plot is curved like below it suggests the linear assumption is incorrect i.e. a non-linear function:
+
+![[videoframe_141307.png]]
+
+When the variance increases with x our model is incorrect:
+
+![[videoframe_151199.png]]
+
+```python
+import seaborn as sbn
+from mathplotlib import pyplot as plt
+
+sbn.residplot(df['highway-mpg'], df['price'])
+```
+
+### Distribution Plots
+Counts the predicted value versus the actual value. Useful for visualizing models with more than one independent variable (feature)
+
+Vertical axis is scaled to make the area under the distribution equal to one.
+
+![[videoframe_234307.png]]
+
+![[videoframe_262626.png]]
+
+```python
+import seaborn as sbn
+
+# hist=False because we want distribution not histogram
+ax1 = sbn.distplot(df['price'], hist=False, color='r', label='Actual Value')
+sbn.distplot(yhat, hist=False, color='b', label='Fitted Values', ax=ax1)
+```
+## Polynomial Regression and Pipelines
+>A special case of the general linear regression model
+>Useful for describing curvilinear relationships
+
+Curvilinear Relationships:
+What you get by squaring or setting higher-order terms of the predictor variables
+
+- Quadratic - 2nd order polynomial regression
+$$\Large{\hat{Y} = b_0 + b_1x_1 + b_2(x_1)^2}$$
+- Cubic - 3rd order polynomial regression
+$$\Large{\hat{Y} = b_0 + b_1x_1 + b_2(x_1)^2 + b_3(x_1)^3}$$
+
+- Higher Order - when a good fit hasn't been achieved by 2nd or 3rd order
+
+![[videoframe_82541.png]]
+
+```python
+import numpy as np
+from sk
+
+# calculate polynomial of 3rd order
+f = np.polyfit(x, y, 3)
+p = np.poly1d(f)
+
+# print out the model
+print(p)
+
+# we can also have multi-dimensional polynomial linear regression
+# np.polyfit cannot perform this type of regression
+from sklearn.preprocessing import PolynomialFeatures
+
+pr = PolynomialFeatures(degree=2, include_bias=False)
+
+# transform the features into a polynomial feature
+x_polly = pr.fit_transform(x[['horsepower', 'curb-weight']])
+
+# more intuitive example
+pr = PolynomialFeatures(degree=2)
+pr.fit_transform([1, 2], include_bias=False)
+
+# we go from x_1 = 1 and x_2 = 2
+# to x_1 = 1, x_2 = 2, x_1x_2 = (1)2, x_1^2 = 1, x_2^2 = (2)^2
+# i.e. we go from 1, 2 to 1, 2, 2, 1, 4
+# we have a new set of features that are a transformed version of our original features
+
+# normalizing each feature simultaneously
+from sklearn.preprocessing import StandardScaler
+
+SCALE = StandardScaler()
+SCALE.fit(x_data[['horsepower', 'highway-mpg']])
+
+x_scale = SCALE.transform(x_data[['horsepower', 'highway-mpg']])
+
+```
+### Pipelines
+>Used to help simplify the process of getting a prediction. Pipelines sequentially perform a series of transformations and the last step carries out a prediction.
+
+Normalization -> Polynomial Transform -> Linear Regression
+transformations (Normalization and Polynomial Transform), prediction (Linear Regression)
+
+```python
+from sklearn.preprocessing import PolynomialFeatures, StandardScaler
+from sklearn.linear_model import LinearRegression
+from sklearn.pipeline import Pipeline
+
+Input = [('polynomial', PolynomialFeatures(degree=2)), ('scale', StandardScaler()),('Model', LinearRegression())]
+
+pipe = Pipeline(Input)
+
+# train the pipeline
+pipe.fit(df[['horsepower', 'curb-weight', 'engine-size', 'highway-mpg']], y)
+
+yhat = pipe.predict(X[['horsepower', 'curb-weight', 'engine-size', 'highway-mpg']])
+
+
+
+```
+
+## Measure for In-Sample Evaluation
+
+## Prediction and Decision Making
 
 ### Cheat Sheet

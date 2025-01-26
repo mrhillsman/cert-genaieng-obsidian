@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1e2d19f46099eb25",
+        "id": "21fe0c77501d6b61",
         "type": "tabs",
         "children": [
           {
-            "id": "5438c13ae5d68079",
+            "id": "e8942c4c080cc48b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -166,8 +166,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -176,8 +176,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -204,36 +204,41 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5438c13ae5d68079",
+  "active": "e8942c4c080cc48b",
   "lastOpenFiles": [
+    "studyshots/videoframe_87403.png",
+    "studyshots/videoframe_86039.png",
+    "studyshots/videoframe_82560.png",
+    "studyshots/videoframe_82541.png",
+    "studyshots/videoframe_77898.png",
+    "studyshots/videoframe_70919.png",
+    "studyshots/videoframe_584773.png",
+    "studyshots/videoframe_40899.png",
+    "studyshots/videoframe_387788.png",
+    "studyshots/videoframe_372958.png",
+    "studyshots/videoframe_360596.png",
+    "studyshots",
+    "studyshots/videoframe_82541.png.crdownload",
+    "studyshots/videoframe_262626.png.crdownload",
+    "studyshots/videoframe_234307.png.crdownload",
+    "07-data-analysis-with-python/Residual Plot Horizontal Axis.md",
+    "07-data-analysis-with-python/module04/Model Development.md",
+    "[[Residual.md",
+    "Residual.md",
+    "[.md",
+    "studyshots/videoframe_248411.png.crdownload",
+    "studyshots/videoframe_151199.png.crdownload",
+    "studyshots/videoframe_141307.png.crdownload",
+    "studyshots/videoframe_113976.png.crdownload",
     "07-data-analysis-with-python/Thoughts on Linear Regression.md",
     "07-data-analysis-with-python/Understanding the Coefficients in Linear Regression.md",
-    "07-data-analysis-with-python/module04/Model Development.md",
     "07-data-analysis-with-python/Chi-Square Test Examples.md",
     "07-data-analysis-with-python/Plots in Python.md",
     "07-data-analysis-with-python/module03/Exploratory Data Analysis.md",
     "07-data-analysis-with-python/module02/Data Wrangling.md",
     "07-data-analysis-with-python/Pivot Tables.md",
-    "07-data-analysis-with-python/module03/pearson-correlation-examples.png",
     "07-data-analysis-with-python/module03/pearson-correlation-examples.png.crdownload",
-    "07-data-analysis-with-python/plots/correlation-weak-linear.png",
-    "07-data-analysis-with-python/plots/correlation-negative-linear.png",
-    "07-data-analysis-with-python/plots/correlation-positive-linear.png",
-    "07-data-analysis-with-python/plots/standard-line.png",
-    "07-data-analysis-with-python/plots/distribution.png",
     "07-data-analysis-with-python/plots/distribution.png.crdownload",
-    "07-data-analysis-with-python/plots/kernel-density-estimate.png",
-    "07-data-analysis-with-python/plots/kernel-density-estimate.png.crdownload",
-    "07-data-analysis-with-python/plots/residual.png",
-    "07-data-analysis-with-python/plots/residual.png.crdownload",
-    "07-data-analysis-with-python/plots/box-example.png",
-    "07-data-analysis-with-python/plots/box-example.png.crdownload",
-    "07-data-analysis-with-python/plots/box.png",
-    "07-data-analysis-with-python/plots/box.png.crdownload",
-    "07-data-analysis-with-python/plots/positive-linear-regression.png.crdownload",
-    "07-data-analysis-with-python/plots/heatmap.png.crdownload",
-    "07-data-analysis-with-python/plots/bar.png.crdownload",
-    "07-data-analysis-with-python/plots/histogram.png.crdownload",
     "[[.md",
     "[[Understanding.md",
     "Understanding.md",
@@ -247,11 +252,6 @@
     "07-data-analysis-with-python/module06/Untitled.md",
     "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
     "excalidraw/drawing 2025-00-Mo 10.00.46.excalidraw.md",
-    "07-data-analysis-with-python/General Notes.md",
-    "07-data-analysis-with-python/output.md",
-    "07-data-analysis-with-python/Review-Introduction.md",
-    "Untitled.canvas",
-    "202501161848.md",
-    "excalidraw/drawing 2025-47-Th 06.47.54.excalidraw.md"
+    "Untitled.canvas"
   ]
 }
