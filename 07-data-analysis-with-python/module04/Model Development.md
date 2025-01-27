@@ -208,13 +208,48 @@ pipe = Pipeline(Input)
 pipe.fit(df[['horsepower', 'curb-weight', 'engine-size', 'highway-mpg']], y)
 
 yhat = pipe.predict(X[['horsepower', 'curb-weight', 'engine-size', 'highway-mpg']])
-
-
-
 ```
 
 ## Measure for In-Sample Evaluation
+>numerically determine how good the model fits on dataset; using numbers instead of pictures
+>tells us how well our model will fit the data used to train it
+>does not tell us how well the trained model can be used to predict new data
 
+- Mean Squared Error (MSE)
+	- find the error
+	- square the error
+	- take the sum of all squared errors and divide by the number of samples
+
+```python
+from sklearn.metrics import mean_squared_error
+mse = mean_squared_error(df['price'], Y_predict_simple_fit)
+print(mse)
+```
+
+- R-squared / R^2 / Coefficient of Determination
+	- how close is the data to the fitted regression line
+	- the percentage of variation of the target variable (Y) that is explained by the linear model
+$$
+\Large{R^2=(1 - \frac{\text{MSE of regression line}}{\text{MSE of the avg of the data }(\bar{y})})}
+$$
+Relatively Good Fit
+
+![[videoframe_126730.png]]
+
+Performs about the same as just using the average of the data points; not a relatively good fit
+
+![[videoframe_179558.png]]
+
+Calculating in Python (LinearRegression)
+
+![[videoframe_202342.png]]
+
+[[Additional Notes on R-squared]]
 ## Prediction and Decision Making
+
+![[videoframe_99799.png]]
+
+![[videoframe_303190.png]]
+
 
 ### Cheat Sheet
