@@ -43,6 +43,7 @@ Cross Validation
 - split the data into k-equal groups (folds)
 	- if you have 4 folds use 3 for training and 1 for testing swapping out the 3 to 1 combination until each fold is used for both training and testing
 	- at the end use the average of the results as the estimate for out-of-sample error
+
 ```python
 from sklearn.model_selection import cross_val_score
 import numpy as np
@@ -59,6 +60,7 @@ result = np.mean(scores)
 ```
 
 Get the actual predicted values supplied by the model before the r-squared values are calculated
+
 ```python
 from sklearn.model_selection import cross_val_predict
 
@@ -69,7 +71,6 @@ yhat = cross_val_predict(lr, x_data, y_data, cv=3)
 ```
 
 **Key differences** between `cross_val_score` and `cross_val_predict`:
-
 1. **Purpose**
     - **`cross_val_score`**: Evaluates an estimator’s performance by returning an array of scores (one per cross-validation fold).
     - **`cross_val_predict`**: Generates out-of-sample predictions for each data point in the dataset, effectively showing what predictions look like when each fold of data is "unseen."
@@ -89,17 +90,21 @@ Essentially:
 ## Overfitting, Underfitting, and Model Selection
 Model Selection
 -  How to pick the best polynomial order and issues that arise when picking the wrong order
-We assume the training points come from a polynomial function + noise
+- We assume the training points come from a polynomial function and some noise
 $$
-y(x)+\text{noise}
+\Large{y(x)+\text{noise}}
 $$
-Underfitting - model is too simple to fit the data
+- The goal of model selection is to determine the order of the polynomial to provide the best estimate of the function y(x)
+
+If we try to fit the function with a linear function the line is not complex enough to fix the data and as a result there are many errors - underfitting - model is too simple to fit data
 
 ![[videoframe_47022.png]]
-
-Overfitting - the model is too flexible and fits the noise rather than the function
+16th order polynomial regression extremely well at tracking the training point but performs poorly at estimating the function, obvious/apparent where there is little training data, the estimated function oscillates not tracking the function - overfitting - the model is too flexible and fits the noise rather than the function
 
 ![[videoframe_82837.png]]
+
+
+
 
 ## Ridge Regression
 
