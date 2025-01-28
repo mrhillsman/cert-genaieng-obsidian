@@ -103,11 +103,77 @@ If we try to fit the function with a linear function the line is not complex eno
 
 ![[videoframe_82837.png]]
 
+```python
+# calculating different r-squared values
+rsqu_test = []
+order = [1, 2, 3, 4]
 
-
-
+# x_train, x_test, y_train, and y_test come from above; train_test_split()
+for n in order:
+    pr = PolynomialFeatures(degree=n)
+    # transform the training and test data into a polynomial
+    x_train_pr = pr.fit_transform(x_train[['horsepower']])
+    x_test_pr = pr.fit_transform(x_test[['horsepower']])
+    # fit the regression model using the transformed data
+    lr.fit(x_train_pr, y_train)
+    # calculate the r-squared using the test data and store it in the array
+    rsqu_test.append(lr.score(x_test_pr, y_test))
+```
 ## Ridge Regression
+> the process of regularizing the feature set using the hyperparameter alpha ($\large{\alpha}$) used to regularize and reduce standard errors and avoid over-fitting in regression
+
+alpha is a parameter we select before fitting or training. if alpha is too large the coefficients will approach zero and underfit the data. if alpha is zero the overfitting is evident. in order to select alpha we use **cross validation**
+
+```python
+from sklearn.linear_model import Ridge
+
+RidgeModel = Ridge(alpha=0.1)
+RidgeModel.fix(X, y)
+yhat = RidgeModel.predict(X)
+```
+
+Determining Alpha
+- Use some data for training
+- Use a second set called validation data
+	- similar to test data but used to select parameters like alpha
+- Start with a small value of alpha
+- Train the model
+- Make a prediction using the validation data
+- Calculate the R^2
+- Repeat with a different alpha value
+- Select the value of alpha that maximizes the R^2
+
+
+
+
 
 ## Grid Search
+>allows us to scan through multiple free parameters with few lines of code
+
+Hyperparameters
+- alpha in Ridge regression is called a hyperparameter
+- scikit-learn has a means of automatically iterating over hyperparameters using cross-validation - Grid Search
+```python
+from sklearn.linear_model import Ridge
+from sklearn.model_selection import GridSearchCV
+
+parameters = [{'alpha': [0.001, 0.1, 1, 10, 100, 1000, 10000, 100000]}]
+# parameters = [{'alpha': [0.001, 0.1, 1, 10, 100, 1000, 10000, 100000], 'normalize': [True False]}]
+
+RR = Ridge()
+
+Grid = GridSearchCV(RR, parameters, cv=4)
+
+Grid.fit(x_data[['horsepower', 'curb-weight', 'engine-size', 'highway-mpg']], y_data)
+
+Grid.best_estimator_
+
+scores = Grid.cv_results_
+scores['mean_test_score']
+
+# print score for the different free parameter values
+for param, mean_val, mean_test in zip(scores['params'], scores['mean_test_score'], scores['mean_train_score']):
+    print(param, "R^2 on test data: ", mean_val, "R^2 on train data: ", mean_test)
+```
 
 ### Cheat Sheet
