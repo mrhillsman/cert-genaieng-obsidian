@@ -228,7 +228,7 @@ print(mse)
 
 - R-squared / R^2 / Coefficient of Determination
 	- how close is the data to the fitted regression line
-	- the percentage of variation of the target variable (Y) that is explained by the linear model
+	- the percentage of variation of the target variable ($\large{y}$) that is explained by the linear model
 $$
 \Large{R^2=(1 - \frac{\text{MSE of regression line}}{\text{MSE of the avg of the data }(\bar{y})})}
 $$
