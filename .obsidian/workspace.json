@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
+                "file": "Additional Notes on Cross-Validation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Model Evaluation and Refinement"
-            }
-          },
-          {
-            "id": "b7e44c2a2909aa92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07-data-analysis-with-python/module05/Lab Notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lab Notes"
+              "title": "Additional Notes on Cross-Validation"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -219,12 +204,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b7e44c2a2909aa92",
+  "active": "ca91510cdd2e0359",
   "lastOpenFiles": [
-    "07-data-analysis-with-python/Additional Notes on R-squared.md",
+    "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
+    "Additional Notes on Cross-Validation.md",
     "07-data-analysis-with-python/module05/Lab Notes.md",
     "07-data-analysis-with-python/module04/Model Development.md",
-    "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
     "studyshots/videoframe_99799.png",
     "studyshots/videoframe_82837.png",
     "studyshots/videoframe_81194.png",
@@ -236,6 +221,7 @@
     "studyshots/videoframe_179558.png",
     "studyshots/videoframe_165844.png",
     "07-data-analysis-with-python/module04/Model Development - Cheat Sheet.md",
+    "07-data-analysis-with-python/Additional Notes on R-squared.md",
     "studyshots",
     "studyshots/videoframe_82541.png.crdownload",
     "studyshots/videoframe_262626.png.crdownload",
@@ -266,7 +252,6 @@
     "excalidraw/drawing 2025-01-Mo 10.01.32.excalidraw.md",
     "07-data-analysis-with-python/module01/Importing Dataset.md",
     "' column 1 ',column 2', 'column 3'.md",
-    "07-data-analysis-with-python/module01/Cheat Sheet - Importing Data Sets.md",
     "Untitled.canvas"
   ]
 }

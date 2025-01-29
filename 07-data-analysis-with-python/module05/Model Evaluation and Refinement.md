@@ -87,6 +87,8 @@ yhat = cross_val_predict(lr, x_data, y_data, cv=3)
 Essentially:
 - Use **`cross_val_score`** if you want cross-validation metrics.
 - Use **`cross_val_predict`** if you want cross-validated predictions you can analyze further (e.g., constructing residual plots).
+
+[[Additional Notes on Cross-Validation]]
 ## Overfitting, Underfitting, and Model Selection
 Model Selection
 -  How to pick the best polynomial order and issues that arise when picking the wrong order
