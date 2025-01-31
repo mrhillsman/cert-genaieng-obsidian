@@ -160,7 +160,7 @@ from sklearn.linear_model import Ridge
 from sklearn.model_selection import GridSearchCV
 
 parameters = [{'alpha': [0.001, 0.1, 1, 10, 100, 1000, 10000, 100000]}]
-# parameters = [{'alpha': [0.001, 0.1, 1, 10, 100, 1000, 10000, 100000], 'normalize': [True False]}]
+# parameters = [{'alpha': [0.001, 0.1, 1, 10, 100, 1000, 10000, 100000], 'normalize': [True False]}] < normalize causes error in newer versions of sklearn see [[Lab Notes]] or [[Model Evaluation and Refinement - Cheat Sheet]]
 
 RR = Ridge()
 
@@ -177,5 +177,4 @@ scores['mean_test_score']
 for param, mean_val, mean_test in zip(scores['params'], scores['mean_test_score'], scores['mean_train_score']):
     print(param, "R^2 on test data: ", mean_val, "R^2 on train data: ", mean_test)
 ```
-
-### Cheat Sheet
+## [[Model Evaluation and Refinement - Cheat Sheet|Cheat Sheet]]

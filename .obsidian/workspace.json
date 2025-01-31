@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "284488deb1659349",
+        "id": "846bf00fa696542f",
         "type": "tabs",
         "children": [
           {
-            "id": "ca91510cdd2e0359",
+            "id": "a31c0625f3363e9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Additional Notes on Cross-Validation.md",
+                "file": "08-machine-learning-with-python/module01/Introduction to Machine Learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Additional Notes on Cross-Validation"
+              "title": "Introduction to Machine Learning"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "estimator",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -204,12 +204,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ca91510cdd2e0359",
+  "active": "a31c0625f3363e9f",
   "lastOpenFiles": [
+    "08-machine-learning-with-python/module05/Evaluating and Validating ML Models.md",
+    "08-machine-learning-with-python/module06",
+    "08-machine-learning-with-python/module04/Building Unsupervised Learning Models.md",
+    "08-machine-learning-with-python/module05",
+    "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
+    "08-machine-learning-with-python/module04",
+    "08-machine-learning-with-python/module02/Linear and Logistic Regression.md",
+    "08-machine-learning-with-python/module03",
+    "08-machine-learning-with-python/module01/Introduction to Machine Learning.md",
+    "08-machine-learning-with-python/module02",
+    "07-data-analysis-with-python/module03/Exploratory Data Analysis.md",
+    "08-machine-learning-with-python/module01",
+    "07-data-analysis-with-python/module03/scatterplot.png",
     "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
-    "Additional Notes on Cross-Validation.md",
+    "07-data-analysis-with-python/module05/Model Evaluation and Refinement - Cheat Sheet.md",
     "07-data-analysis-with-python/module05/Lab Notes.md",
+    "07-data-analysis-with-python/module06/Python Cheat Sheet for Data Analysis.pdf",
+    "07-data-analysis-with-python/Additional Notes on Cross-Validation.md",
+    "07-data-analysis-with-python/Additional Notes on R-squared.md",
+    "07-data-analysis-with-python/Chi-Square Test Examples.md",
+    "07-data-analysis-with-python/Pivot Tables.md",
+    "07-data-analysis-with-python/Plots in Python.md",
+    "07-data-analysis-with-python/Residual Plot Horizontal Axis.md",
+    "07-data-analysis-with-python/Thoughts on Linear Regression.md",
+    "07-data-analysis-with-python/Understanding the Coefficients in Linear Regression.md",
     "07-data-analysis-with-python/module04/Model Development.md",
+    "07-data-analysis-with-python/module03/pivottable.png",
+    "07-data-analysis-with-python/module06/Python Cheat Sheet for Data Analysis.pdf.crdownload",
+    "07-data-analysis-with-python/module02/Data Wrangling.md",
+    "07-data-analysis-with-python/module01/Data Analysis with Python.md",
+    "07-data-analysis-with-python/module04/Model Development - Cheat Sheet.md",
     "studyshots/videoframe_99799.png",
     "studyshots/videoframe_82837.png",
     "studyshots/videoframe_81194.png",
@@ -218,40 +245,12 @@
     "studyshots/videoframe_233330.png",
     "studyshots/videoframe_213330.png",
     "studyshots/videoframe_202342.png",
-    "studyshots/videoframe_179558.png",
-    "studyshots/videoframe_165844.png",
-    "07-data-analysis-with-python/module04/Model Development - Cheat Sheet.md",
-    "07-data-analysis-with-python/Additional Notes on R-squared.md",
     "studyshots",
     "studyshots/videoframe_82541.png.crdownload",
-    "studyshots/videoframe_262626.png.crdownload",
-    "studyshots/videoframe_234307.png.crdownload",
-    "07-data-analysis-with-python/Residual Plot Horizontal Axis.md",
     "[[Residual.md",
     "Residual.md",
     "[.md",
-    "studyshots/videoframe_248411.png.crdownload",
-    "studyshots/videoframe_151199.png.crdownload",
-    "studyshots/videoframe_141307.png.crdownload",
-    "studyshots/videoframe_113976.png.crdownload",
-    "07-data-analysis-with-python/Thoughts on Linear Regression.md",
-    "07-data-analysis-with-python/Understanding the Coefficients in Linear Regression.md",
-    "07-data-analysis-with-python/Chi-Square Test Examples.md",
-    "07-data-analysis-with-python/Plots in Python.md",
-    "07-data-analysis-with-python/module03/Exploratory Data Analysis.md",
-    "07-data-analysis-with-python/module02/Data Wrangling.md",
-    "07-data-analysis-with-python/Pivot Tables.md",
-    "07-data-analysis-with-python/module03/pearson-correlation-examples.png.crdownload",
-    "07-data-analysis-with-python/plots/distribution.png.crdownload",
     "[[.md",
-    "[[Understanding.md",
-    "Understanding.md",
-    "07-data-analysis-with-python/module01/Data Analysis with Python.md",
-    "Writing a ChatPromptTemplate.md",
-    "Tokenizer.md",
-    "excalidraw/drawing 2025-01-Mo 10.01.32.excalidraw.md",
-    "07-data-analysis-with-python/module01/Importing Dataset.md",
-    "' column 1 ',column 2', 'column 3'.md",
     "Untitled.canvas"
   ]
 }
