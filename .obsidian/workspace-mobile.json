@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b91457c5ff95e996",
+        "id": "c9ab94b8175545a5",
         "type": "tabs",
         "children": [
           {
-            "id": "c00715b89bbbe573",
+            "id": "1258c8fc4821589d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Model Evaluation and Refinement"
+              "title": "New tab"
             }
           }
         ]
@@ -167,6 +163,8 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c00715b89bbbe573",
-  "lastOpenFiles": []
+  "active": "1258c8fc4821589d",
+  "lastOpenFiles": [
+    "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md"
+  ]
 }
