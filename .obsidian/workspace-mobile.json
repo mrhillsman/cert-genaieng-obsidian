@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c9ab94b8175545a5",
+        "id": "609d5481d64a12a1",
         "type": "tabs",
         "children": [
           {
-            "id": "1258c8fc4821589d",
+            "id": "c14a909e04048389",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -32,7 +32,8 @@
         "state": {
           "type": "file-explorer",
           "state": {
-            "sortOrder": "alphabetical"
+            "sortOrder": "alphabetical",
+            "autoReveal": false
           },
           "icon": "lucide-folder-closed",
           "title": "Files"
@@ -163,8 +164,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1258c8fc4821589d",
+  "active": "c14a909e04048389",
   "lastOpenFiles": [
+    "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
     "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md"
   ]
 }
