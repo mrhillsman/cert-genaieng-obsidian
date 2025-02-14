@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "846bf00fa696542f",
+        "id": "12762dd4d2e61dea",
         "type": "tabs",
         "children": [
           {
-            "id": "a31c0625f3363e9f",
+            "id": "8ebe3479dfa02868",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08-machine-learning-with-python/module01/Introduction to Machine Learning.md",
+                "file": "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction to Machine Learning"
+              "title": "Building Supervised Learning Models"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -77,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "03c22f7e78a99d91",
@@ -203,25 +205,41 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a31c0625f3363e9f",
+  "active": "8ebe3479dfa02868",
   "lastOpenFiles": [
-    "08-machine-learning-with-python/module05/Evaluating and Validating ML Models.md",
-    "08-machine-learning-with-python/module06",
-    "08-machine-learning-with-python/module04/Building Unsupervised Learning Models.md",
-    "08-machine-learning-with-python/module05",
-    "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
-    "08-machine-learning-with-python/module04",
+    "studyshots/videoframe_82528.png",
+    "studyshots/videoframe_82528.png.crdownload",
+    "studyshots/videoframe_72702.png",
+    "studyshots/videoframe_72702.png.crdownload",
+    "studyshots/videoframe_361618.png",
+    "studyshots/videoframe_361618.png.crdownload",
+    "studyshots/videoframe_321969.png",
+    "studyshots/videoframe_321969.png.crdownload",
+    "studyshots/videoframe_167178.png",
+    "studyshots/videoframe_167178.png.crdownload",
+    "studyshots/videoframe_107258.png",
+    "studyshots/videoframe_107258.png.crdownload",
+    "studyshots/videoframe_284338.png",
+    "studyshots/videoframe_284338.png.crdownload",
+    "studyshots/videoframe_278524.png",
+    "studyshots/videoframe_278524.png.crdownload",
+    "studyshots/videoframe_125873.png",
+    "studyshots/videoframe_125873.png.crdownload",
+    "Linear and Logistic Regression.md",
     "08-machine-learning-with-python/module02/Linear and Logistic Regression.md",
-    "08-machine-learning-with-python/module03",
     "08-machine-learning-with-python/module01/Introduction to Machine Learning.md",
-    "08-machine-learning-with-python/module02",
+    "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
+    "08-machine-learning-with-python/module02/Linear and Logistic Regression - Cheat Sheet.md",
+    "studyshots/videoframe_314126.png",
+    "studyshots/videoframe_314126.png.crdownload",
+    "studyshots/videoframe_276223.png",
+    "additional-notes/NumPy shape.md",
+    "08-machine-learning-with-python/module05/Evaluating and Validating ML Models.md",
+    "08-machine-learning-with-python/module04/Building Unsupervised Learning Models.md",
     "07-data-analysis-with-python/module03/Exploratory Data Analysis.md",
-    "08-machine-learning-with-python/module01",
-    "07-data-analysis-with-python/module03/scatterplot.png",
     "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
     "07-data-analysis-with-python/module05/Model Evaluation and Refinement - Cheat Sheet.md",
     "07-data-analysis-with-python/module05/Lab Notes.md",
-    "07-data-analysis-with-python/module06/Python Cheat Sheet for Data Analysis.pdf",
     "07-data-analysis-with-python/Additional Notes on Cross-Validation.md",
     "07-data-analysis-with-python/Additional Notes on R-squared.md",
     "07-data-analysis-with-python/Chi-Square Test Examples.md",
@@ -231,25 +249,10 @@
     "07-data-analysis-with-python/Thoughts on Linear Regression.md",
     "07-data-analysis-with-python/Understanding the Coefficients in Linear Regression.md",
     "07-data-analysis-with-python/module04/Model Development.md",
-    "07-data-analysis-with-python/module03/pivottable.png",
-    "07-data-analysis-with-python/module06/Python Cheat Sheet for Data Analysis.pdf.crdownload",
     "07-data-analysis-with-python/module02/Data Wrangling.md",
     "07-data-analysis-with-python/module01/Data Analysis with Python.md",
     "07-data-analysis-with-python/module04/Model Development - Cheat Sheet.md",
-    "studyshots/videoframe_99799.png",
-    "studyshots/videoframe_82837.png",
-    "studyshots/videoframe_81194.png",
-    "studyshots/videoframe_47022.png",
-    "studyshots/videoframe_303190.png",
-    "studyshots/videoframe_233330.png",
-    "studyshots/videoframe_213330.png",
-    "studyshots/videoframe_202342.png",
-    "studyshots",
-    "studyshots/videoframe_82541.png.crdownload",
     "[[Residual.md",
-    "Residual.md",
-    "[.md",
-    "[[.md",
     "Untitled.canvas"
   ]
 }

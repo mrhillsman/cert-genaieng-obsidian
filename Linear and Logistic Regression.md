@@ -272,13 +272,129 @@ gdp increase over time and the rate of this growth also increases. increasing gr
 
 
 
+## Introduction to Logistic Regression
+
+statistical modeling technique that predicts the probability of an observation belonging to one or two classes such as true or false
+- refers to a binary classified based on statistical logistic regression
+- choose a threshold probability and assign based on if threshold is crossed or not
+
+**When is logistic regression a good choice**
+- the target in data is binary (yes/no, 0/1, true/false...)
+- the probability of an outcome is needed (probability of custom buying a product)
+- data is linearly separable
+- to understand the impact of an independent feature
+
+**Logistic regression applications**
+- probability predictor and a binary classifier
+	- predicting heart attack risk
+		- within time period based on factors like age, sex, bmi, etc
+	- diagnosing patients based on a set of characteristics
+	- predicting whether a customer will purchase a product or halt a subscription
+	- product/process/system failure probability
+	- mortgage default likelihood
+
+![[videoframe_250342.png]]
+
+**sigmoid function** aka logic function
+
+![[videoframe_314126.png]]
+
+## Training a Logistic Regression Model
+
+- identify parameters that map input features to target outcomes
+- objective: predict classes with minimal error
+- find parameters/theta that minimizes cost function
+
+Process
+- choose starting set of parameters $\large{\theta}$ - can be random
+- predict probability that class is = 1 for each observation
+- calculate prediction error (cost function)
+- update $\large{\theta}$ to reduce prediction error
+- repeat until
+	- reach small log-loss value or
+	- targeted number of iterations
+
+### optimal logistic regression
+the process of creating a decision boundary by combining a linear model $\large{\hat{y}}$ in terms of parameters $\large{\theta}$ with a (sigmoid) function yields a binary classification model - preliminary logistic regression
+
+**break-down:**
+
+so basically take your linear regression 
+$$ \Large{\hat{y} = \theta_0 + \theta_1x_1} $$
+combine with the sigmoid function $$\Large{\hat{p} = \sigma(\hat{y}) = \frac{1}{1 + e^{-\hat{y}}}}$$
+and you get a decision boundary as a result essentially a binary classifier is built using these two items together where
+$$ \Large{
+\sigma(\hat{y}) = \\
+\begin{cases}
+\text{0 if } \sigma(\hat{y}) \text{ < 0.5} \\
+\text{1 if } \sigma(\hat{y}) \ge \text{0.5}
+\end{cases}
+}
+$$
+**cost function** (log-loss) needs to be minimized
+- measures how well $\large{\hat{p}_i}$ matches $\large{y_i}$
+$$ \Large{
+\text{log-loss} = -\frac{1}{N}\sum^{N}_{i-1}y_i\log(\hat{p}_i)+(1-y_i)\log(1-\hat{p}_i)
+}
+$$
+- negative sign exists because the logarithm is negative for arguments between 0 and 1
+
+log-loss favors
+- confident and correct: predicted probability of class 1 is high and correct => log-loss is small
+log-loss penalizes
+- confident and incorrect: predicted probability of class 0 is high and incorrect => log-less is very large
+
+### Minimizing cost function with gradient descent
+various ways to stop iterations but essentially you stop training when log-loss is satisfactory. different techniques for changing $\large{\theta}$ , most popular is gradient descent
+
+**gradient descent**
+- iterative approach to finding the minimum of a function
+- adjusts parameter values using log-loss derivative
+- depends on a specified learning rate
+	- controls how far it's allowed to step the parameters on each iteration
+- additional features of gradient descent
+	- the gradient of the cost function is calculated over the entire descent
+	- large data set = slow descent
+	- converge less likely as steps too big to notice minima
+	- gradient can be approximated using a random subset
+
+**stochastic gradient descent** (SGD)
+- variation of gradient descent (faster but can be less accurate)
+- uses a random data subset and scales well
+- likely to overlook local minima and find global minima of the cost function
+- converges quickly toward a global minimum but can wander around it for some time
+	- convergence can be improved by
+		- decreasing learning rate
+		- gradually increasing sample size
 
 
 
+___
 
+# Module 2 Summary and Highlights
 
+Congratulations! You have completed this lesson. At this point in the course, you know: 
 
-
-
-
-
+- Regression models relationships between a continuous target variable and explanatory features, covering simple and multiple regression types.
+    
+- Simple regression uses a single independent variable to estimate a dependent variable, while multiple regression involves more than one independent variable.
+    
+- Regression is widely applicable, from forecasting sales and estimating maintenance costs to predicting rainfall and disease spread.
+    
+- In simple linear regression, a best-fit line minimizes errors, measured by Mean Squared Error (MSE); this approach is known as Ordinary Least Squares (OLS).
+    
+- OLS regression is easy to interpret but sensitive to outliers, which can impact accuracy.
+    
+- Multiple linear regression extends simple linear regression by using multiple variables to predict outcomes and analyze variable relationships.
+    
+- Adding too many variables can lead to overfitting, so careful variable selection is necessary to build a balanced model.
+    
+- Nonlinear regression models complex relationships using polynomial, exponential, or logarithmic functions when data does not fit a straight line.
+    
+- Polynomial regression can fit data but mayoverfit by capturing random noise rather than underlying patterns.
+    
+- Logistic regression is a probability predictor and binary classifier, suitable for binary targets and assessing feature impact.
+    
+- Logistic regression minimizes errors using log-loss and optimizes with gradient descent or stochastic gradient descent for efficiency.
+    
+- Gradient descent is an iterative process to minimize the cost function, which is crucial for training logistic regression models.
