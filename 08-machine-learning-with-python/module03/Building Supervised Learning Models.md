@@ -100,7 +100,46 @@ Training a Decision Tree
 
 ## Regression Trees
 ___
-analogous to a decision tree but predicts continuous values rather than discrete ones
+analogous to a decision tree that predicts continuous values rather than discrete ones
+- classification - target is categorical
+- regression - target is continuous
+a decision tree adapted to solve regression problems
 
 ![[videoframe_82528.png]]
 
+- created by recursively splitting data set into subsets to maximize information gain
+	- generates a tree-like structure
+		- minimizes randomness of classes assigned to split nodes
+
+![[videoframe_121679.png]]
+
+**Predicting Values**
+
+![[videoframe_149470.png]]
+(more expensive to compute)
+
+**Splitting Criterion**
+- utilize MSE as a measure of target variance
+- use weighted average of MSEs to measure the quality of each split
+$$\Large{
+MSE_\text{Avg} = \frac{1}{N_\text{Total}}(N_\text{Left}*MSE_\text{Left}+N_\text{Right}*MSE_\text{Right})
+}
+$$
+
+average MSE equals one over the number of observations in the two split nodes, times the sum of the number of observations in the left split times the MSE of the left split, and the number of observations in the right split times the MSE of the right split.
+
+Lower $MSE_\text{Avg}$ means lower variance and therefore higher quality of the split
+
+**Choosing the best split**
+- calculate mse for left and right nodules
+- calculate weighted average of MSEs
+- select split with lowest weighted MSE
+
+![[videoframe_303288.png]]
+
+![[videoframe_322129.png]]
+
+
+___
+
+## Support Vector Machines (SVM)
