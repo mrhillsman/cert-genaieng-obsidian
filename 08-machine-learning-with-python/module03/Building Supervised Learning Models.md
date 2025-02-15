@@ -164,6 +164,7 @@ create a hyperplane that segregates a data set into two parts and finds the larg
 ![[videoframe_144333.png]]
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 **derivation of the optimization**
 decision boundary: $\large{w^Tx+b=0}$ 
 support vectors:
@@ -211,6 +212,8 @@ for each query point -> calculate distances -> sort ascending -> select top k la
 	- finer details lost
 	- underfitting
 =======
+=======
+>>>>>>> Stashed changes
 ![[videoframe_200088.png]]
 
 ![[videoframe_241764.png]]
@@ -291,5 +294,9 @@ Congratulations! You have completed this lesson. At this point in the course, yo
     
 - The bias-variance tradeoff affects model accuracy, and methods such as bagging, boosting, and random forests help manage bias and variance to improve model performance.
     
+<<<<<<< Updated upstream
+- Random forests use bagging to train multiple decision trees on bootstrapped data, improving accuracy by reducing variance.
+>>>>>>> Stashed changes
+=======
 - Random forests use bagging to train multiple decision trees on bootstrapped data, improving accuracy by reducing variance.
 >>>>>>> Stashed changes
