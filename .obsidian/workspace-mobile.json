@@ -11,10 +11,14 @@
             "id": "c14a909e04048389",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Building Supervised Learning Models"
             }
           }
         ]
@@ -166,6 +170,11 @@
   },
   "active": "c14a909e04048389",
   "lastOpenFiles": [
+    "studyshots/videoframe_322129.png",
+    "studyshots/videoframe_303288.png",
+    "studyshots/videoframe_149470.png",
+    "studyshots/videoframe_121679.png",
+    "08-machine-learning-with-python/module03/subtitle.txt",
     "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
     "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md"
   ]

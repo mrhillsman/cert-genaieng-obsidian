@@ -143,3 +143,23 @@ Lower $MSE_\text{Avg}$ means lower variance and therefore higher quality of the 
 ___
 
 ## Support Vector Machines (SVM)
+maps each data instance as a point in multi-dimensional space where the input features are represented as a value for a specific coordinate
+classifies input data by identifying the hyperplane which distinctly differentiates two classes
+rudimentary svm is a binary classifier but can be adapted for regression
+
+**primary goal**
+create a hyperplane that segregates a data set into two parts and finds the largest margin
+- the larger the margin the better the model's accuracy on new, unseen data
+- perfect separation is impossible in the real world
+	- can incorporate a soft margin which allows it to tolerate misclassifications while maximizing the margin
+	- the balance between maximizing margin and minimizing misclassification is controlled by a parameter C
+	- smaller C; more misclassifications, softer margin
+	- larger C; less misclassification, harder margin (forces stricter separation)
+
+**2D Feature Space**
+- decision boundary is a line
+- margin is the distance from the hyperplane to the closest points from each class
+	- these nearest-point representatives from each class are support vectors
+
+![[videoframe_144333.png]]
+
