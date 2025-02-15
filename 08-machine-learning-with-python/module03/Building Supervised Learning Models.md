@@ -163,3 +163,49 @@ create a hyperplane that segregates a data set into two parts and finds the larg
 
 ![[videoframe_144333.png]]
 
+**derivation of the optimization**
+decision boundary: $\large{w^Tx+b=0}$ 
+support vectors:
+
+
+**svm pros and cons**
+- advantages
+	- effective in high-dimensional spaces
+	- robust to overfitting
+	- excels on linear separable data
+	- works with weakly separable data
+- limitations
+	- slow for training on large data sets
+	- sensitive to noise and overlapping classes
+	- sensitive to kernel and regularization parameters
+
+**applications of svm**
+- image classification and handwritten digit recognition
+- parsing, spam detection, sentiment analysis
+- speech recognition, anomaly detection, and noise filtering
+
+___
+
+## k-Nearest Neighbors
+takes a group of labeled data points and uses them to learn how to label other data points - classification and regression - neighbors are data points close to each other with similar features
+
+you have to define mathematically what is meant by a neighbor
+
+**finding the optimal k**
+- test a range of values using a labeled test dataset and measure accuracy
+- choose k = 1 and use the training part for modeling and calculate the prediction accuracy using all samples in test set
+- repeat increasing k finding the best k for model
+
+kNN is a lazy learner
+- memorizes training data
+- makes predictions based on distance to training data points
+**brute force algorithm**
+for each query point -> calculate distances -> sort ascending -> select top k labels -> assign class or value
+
+**effect of k in kNN**
+- too small
+	- values fluctuate
+	- overfitting
+- too large
+	- finer details lost
+	- underfitting

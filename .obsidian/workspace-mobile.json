@@ -110,7 +110,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
+            "file": "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -170,6 +170,7 @@
   },
   "active": "c14a909e04048389",
   "lastOpenFiles": [
+    "studyshots/videoframe_144333.png",
     "studyshots/videoframe_322129.png",
     "studyshots/videoframe_303288.png",
     "studyshots/videoframe_149470.png",
