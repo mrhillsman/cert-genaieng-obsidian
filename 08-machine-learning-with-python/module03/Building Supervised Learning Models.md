@@ -163,6 +163,7 @@ create a hyperplane that segregates a data set into two parts and finds the larg
 
 ![[videoframe_144333.png]]
 
+<<<<<<< Updated upstream
 **derivation of the optimization**
 decision boundary: $\large{w^Tx+b=0}$ 
 support vectors:
@@ -209,3 +210,86 @@ for each query point -> calculate distances -> sort ascending -> select top k la
 - too large
 	- finer details lost
 	- underfitting
+=======
+![[videoframe_200088.png]]
+
+![[videoframe_241764.png]]
+
+![[videoframe_303965.png]]
+
+![[videoframe_326554.png]]
+
+___
+## k-Nearest Neighbors
+
+___
+
+## Bias, Variance, and Ensemble Models
+
+![[videoframe_46484.png]]
+
+![[videoframe_62593.png]]
+
+![[videoframe_78438.png]]
+
+![[videoframe_141807.png]]
+
+![[videoframe_183138.png]]
+
+**Bagging and Boosting**
+- well-known ensemble methods that effectively balance bias and variance
+
+Decision or regression trees are commonly chosen as base learners in ensemble learning
+- their bias and variance can be easily adapted by altering their depth
+
+![[videoframe_231231.png]]
+- perform process multiple times
+- average predictions from multiple iterations
+	- reduces prediction variance
+	- lowers the risk of overfitting
+
+**Boosting**
+- builds a series of weak learners
+- each learner corrects the previous learner's errors
+- systematically reduces prediction error
+- final model is a weighted sum of weak learners
+increase weights for misclassified data, decrease for correctly classified data, re-weighting focuses on correcting mistakes, update model weights based on performance
+- Popular Boosting Algorithms
+	- Gradient Boosting
+	- XGBoost
+	- AdaBoost
+
+![[videoframe_317976.png]]
+
+![[videoframe_345279.png]]
+
+___
+
+# Module 3 Summary and Highlights
+
+Congratulations! You have completed this lesson. At this point in the course, you know: 
+
+- Classification is a supervised machine learning method used to predict labels on new data with applications in churn prediction, customer segmentation, loan default prediction, and multiclass drug prescriptions.
+    
+- Binary classifiers can be extended to multiclass classification using one-versus-all or one-versus-one strategies.
+    
+- A decision tree classifies data by testing features at each node, branching based on test results, and assigning classes at leaf nodes.
+    
+- Decision tree training involves selecting features that best split the data and pruning the tree to avoid overfitting.
+    
+- Information gain and Gini impurity are used to measure the quality of splits in decision trees.
+    
+- Regression trees are similar to decision trees but predict continuous values by recursively splitting data to maximize information gain.
+    
+- Mean Squared Error (MSE) is used to measure split quality in regression trees.
+    
+- K-Nearest Neighbors (k-NN) is a supervised algorithm used for classification and regression by assigning labels based on the closest labeled data points.
+    
+- To optimize k-NN, test various k values and measure accuracy, considering class distribution and feature relevance.
+    
+- Support Vector Machines (SVM) build classifiers by finding a hyperplane that maximizes the margin between two classes, effective in high-dimensional spaces but sensitive to noise and large datasets.
+    
+- The bias-variance tradeoff affects model accuracy, and methods such as bagging, boosting, and random forests help manage bias and variance to improve model performance.
+    
+- Random forests use bagging to train multiple decision trees on bootstrapped data, improving accuracy by reducing variance.
+>>>>>>> Stashed changes
