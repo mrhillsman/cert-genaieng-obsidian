@@ -1,4 +1,4 @@
-### Comparing different regression types
+## Comparing Different Regression Types
 
 **Model Name:** Simple linear regression  
 **Purpose:** To predict a dependent variable based on one independent variable.  
@@ -59,7 +59,7 @@ model.fit(X, y)
 ```
 
 ___
-### Associated functions commonly used
+## Associated Functions Used
 
 **Function/Method Name:** train_test_split  
 **Brief Description:** Splits the dataset into training and testing subsets to evaluate the model's performance.  
