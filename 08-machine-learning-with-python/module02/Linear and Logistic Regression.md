@@ -213,10 +213,11 @@ data is rarely linear and it is more common data has a background trend that fol
 
 **overfitting** - model "memorizes" everything, including noise or variations rather than understanding the underlying patterns
 
-polynomial
+**polynomial**
 - nonlinear dependence on the input features but it has a linear dependence on the regression coefficients
 - can be transformed into a linear regression problem
 - real-world, complex, nonlinear relationships can't be modeled as polynomial
+- relationship between independent variable X and the dependent variable y is modelled as a nth degree polynomial in X
 
 ### Applications of nonlinear regression
 (can't be modeled as polynomials)
@@ -244,7 +245,7 @@ gdp increase over time and the rate of this growth also increases. increasing gr
 
 ### Optimizing nonlinear models
 - if you have a mathematical expression for your proposed model you can use an optimization technique like gradient descent to find optimal parameters
-- if you have decided on a regression model select amongst ml models
+- if you haven't decided on a regression model select amongst ml models
 	- regression trees
 	- random forests
 	- neural networks
