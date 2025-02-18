@@ -48,8 +48,16 @@ How do you decide the final label assigned to each point?
 **Voting Scheme**
 ![[videoframe_278524.png]]
 
-**Tie?** (check weight of vote, use one-versus-all instead, etc)
+*What if there is a tie?* ==Here, we have three classes with the same number of votes. In a scenario where that is possible, it would be better to use an improved scheme, weighing each vote by the confidence level or probability assigned to that class for each classifier. Alternatively, you could try using one-versus-all classification instead.==
+
 ![[videoframe_284338.png]]
+
+**one-versus-all** strategy
+
+![[videoframe_213620.png]]
+
+![[videoframe_240684.png]]
+
 
 ## Decision Trees
 ___
