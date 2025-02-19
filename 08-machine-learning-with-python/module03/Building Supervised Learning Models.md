@@ -152,7 +152,9 @@ ___
 
 ## Support Vector Machines (SVM)
 maps each data instance as a point in multi-dimensional space where the input features are represented as a value for a specific coordinate
+
 classifies input data by identifying the hyperplane which distinctly differentiates two classes
+
 rudimentary svm is a binary classifier but can be adapted for regression
 
 **primary goal**
@@ -174,40 +176,63 @@ create a hyperplane that segregates a data set into two parts and finds the larg
 **derivation of the optimization**
 decision boundary: $\large{w^Tx+b=0}$ 
 support vectors:
+$\large{w^Tx+b=1}$
+$\large{w^Tx+b=-1}$
 
+![[videoframe_200127.png]]
+
+- 2 non-overlapping classes with concentrically circular shapes
+- imagine points as analogous to map contours representing their heights
+
+![[videoframe_211788.png]]
+
+- transform the 2d features of the object so that it takes on a parabolic shape
+- kerneling - mapping data into a higher-dimensional space; in this case the kernel is a quadratic polynomial
+	- no straight-forward way to know which kernel function performs best
+		- sklearn provides linear, polynomial (parabolic embedding), rbf (radial basis functions); score high for points close to each other and an exponentially decreasing score as points become more distant, sigmoid (same as the function used for logistic regression)
+
+![[videoframe_241764.png]]
+
+### SVR (support vector regression)
+
+![[videoframe_303965.png]]
+
+![[videoframe_326554.png]]
 
 **svm pros and cons**
 - advantages
 	- effective in high-dimensional spaces
 	- robust to overfitting
 	- excels on linear separable data
-	- works with weakly separable data
+	- works with weakly separable data using weak margin option
 - limitations
 	- slow for training on large data sets
 	- sensitive to noise and overlapping classes
-	- sensitive to kernel and regularization parameters
+	- sensitive to kernel choice and regularization parameters; non-trivial to determine
 
 **applications of svm**
 - image classification and handwritten digit recognition
 - parsing, spam detection, sentiment analysis
 - speech recognition, anomaly detection, and noise filtering
 
-
 ___
-
 ## k-Nearest Neighbors
 takes a group of labeled data points and uses them to learn how to label other data points - classification and regression - neighbors are data points close to each other with similar features
 
 you have to define mathematically what is meant by a neighbor
+
+![[videoframe_90451.png]]
 
 **finding the optimal k**
 - test a range of values using a labeled test dataset and measure accuracy
 - choose k = 1 and use the training part for modeling and calculate the prediction accuracy using all samples in test set
 - repeat increasing k finding the best k for model
 
-kNN is a lazy learner
+![[videoframe_212776.png]]
+
+*kNN is a lazy learner*
 - memorizes training data
-- makes predictions based on distance to training data points
+- makes predictions for each query point based on its distances to all points in the training data
 **brute force algorithm**
 for each query point -> calculate distances -> sort ascending -> select top k labels -> assign class or value
 
@@ -219,17 +244,22 @@ for each query point -> calculate distances -> sort ascending -> select top k la
 	- finer details lost
 	- underfitting
 
-![[videoframe_200088.png]]
+![[videoframe_279381.png]]
 
-![[videoframe_241764.png]]
+- In classification, the majority voting algorithm becomes unreliable when the class distribution is skewed.
+- More frequent classes tend to dominate the prediction of the new example because they are more prevalent among the nearest neighbors owing to their higher number.
+- To overcome this challenge, you can weigh the classification by considering the distance from the test point to each of its k-NN.
 
-![[videoframe_303965.png]]
+![[videoframe_300809.png]]
 
-![[videoframe_326554.png]]
+- When features have large values, they will dominate the distance measure and the predictions.
+- Artificially more important features can cause biased or low-accuracy predictions.
+- Features need to be scaled to remove this effect, and the simplest way is standardization.
+
+![[videoframe_317731.png]]
 
 
 ___
-
 ## Bias, Variance, and Ensemble Models
 
 ![[videoframe_46484.png]]
