@@ -258,19 +258,56 @@ for each query point -> calculate distances -> sort ascending -> select top k la
 
 ![[videoframe_317731.png]]
 
+- To check whether an independent feature is import you can tune k with and without the feature and evaluate the change in model performance
+
 
 ___
 ## Bias, Variance, and Ensemble Models
+
+- bias - how on target or off target the darts; accuracy
+- variance - how spread out the darts are representing precision
 
 ![[videoframe_46484.png]]
 
 ![[videoframe_62593.png]]
 
+**prediction bias** - refers to how precise a models predictions are
+
 ![[videoframe_78438.png]]
+
+- Prediction variance measures how much a model's predictions fluctuate when trained on different subsets of the same dataset
+- When a model exhibits high prediction variance, it becomes extremely sensitive to changes in the selected training data.
+- High variance causes the model to overfit the training data and track noise or outliers present in the training data. In contrast, models that generalize well to unseen data are necessarily less sensitive to noise. They have low prediction variance.
 
 ![[videoframe_141807.png]]
 
 ![[videoframe_183138.png]]
+
+1. Weak Learners vs. Strong Learners
+	- **Weak learner** is a model that performs **only slightly better than random guessing** (i.e., it has a small predictive power).
+	    - Characteristics: **High bias, low variance**, meaning it **oversimplifies** patterns in the data and leads to **underfitting**.
+	- **Strong learner** is a model that is much more capable of making accurate predictions.
+	    - Characteristics: **Low bias, high variance**, meaning it can **capture complex relationships** but may overfit to training data.
+
+2. Bias-Variance Tradeoff
+	- **Bias**: Error due to overly simplistic assumptions (e.g., assuming a linear relationship when the true pattern is non-linear). High bias leads to **underfitting**.
+	- **Variance**: Sensitivity to small fluctuations in training data, causing the model to perform well on training data but poorly on new data. High variance leads to **overfitting**.
+
+3. Ensemble Learning Techniques - to balance **bias and variance**, two main ensemble methods are used:
+	- **Bagging (Bootstrap Aggregating)**
+	    - Reduces **variance** by training multiple weak models independently on different subsets of data and averaging their predictions (e.g., **Random Forest**).
+	    - Helps **stabilize predictions** and reduce overfitting.
+	- **Boosting**
+	    - Reduces **bias** by training weak learners sequentially, with each model improving on the errors of the previous one (e.g., **AdaBoost, Gradient Boosting, XGBoost**).
+	    - Helps in learning **complex patterns** but can overfit if not properly controlled.
+
+4. Decision Trees as Base Learners
+	- **Decision trees** (or regression trees for continuous targets) are commonly used as base learners in ensemble methods.
+	- **bias and variance can be adjusted**:
+	    - **Shallow trees** (low depth) → High bias, low variance (weak learners).
+	    - **Deep trees** (high depth) → Low bias, high variance (strong learners).
+
+_bagging helps control variance, boosting helps reduce bias, and decision trees are often chosen because their complexity can be adjusted to serve as either weak or strong learners_
 
 **Bagging and Boosting**
 - well-known ensemble methods that effectively balance bias and variance
@@ -278,11 +315,15 @@ ___
 Decision or regression trees are commonly chosen as base learners in ensemble learning
 - their bias and variance can be easily adapted by altering their depth
 
+**Bagging or Bootstrap Aggregating**
+
 ![[videoframe_231231.png]]
 - perform process multiple times
 - average predictions from multiple iterations
 	- reduces prediction variance
 	- lowers the risk of overfitting
+
+_Random Forests_: a bagging method that trains multiple decision trees on bootstrapped data sets  
 
 **Boosting**
 - builds a series of weak learners

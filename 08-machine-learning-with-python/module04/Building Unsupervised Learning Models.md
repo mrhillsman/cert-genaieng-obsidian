@@ -43,7 +43,8 @@ resembles classification but works with unlabeled data independently finding pat
 
 ### k-means clustering
 iterative, centroid-based clustering algorithm that partitions data into similar groups based on distance between centroids
-divides data into k non-overlapping clusters, k-clusters have minimal variance around centroids and maximal dissimilarity between clusters
+
+divides data into k non-overlapping clusters, k-clusters have *minimal variance around centroids* and *maximal dissimilarity between clusters*
 
 **centroid**
 the average position of all points in the cluster

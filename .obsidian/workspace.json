@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
+                "file": "08-machine-learning-with-python/module04/Building Unsupervised Learning Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Building Supervised Learning Models"
+              "title": "Building Unsupervised Learning Models"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "03c22f7e78a99d91",
@@ -206,6 +207,8 @@
   },
   "active": "0e91e7f7acfbb525",
   "lastOpenFiles": [
+    "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
+    "202502192159.md",
     "studyshots/videoframe_317731.png",
     "studyshots/videoframe_317731.png.crdownload",
     "studyshots/videoframe_300809.png",
@@ -227,8 +230,6 @@
     "studyshots/additional-svm-01.png.crdownload",
     "studyshots/additional-svm-00.png",
     "studyshots/additional-svm-00.png.crdownload",
-    "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
-    "studyshots/videoframe_211788.png",
     "08-machine-learning-with-python/module02/Linear and Logistic Regression.md",
     "08-machine-learning-with-python/module02/Linear and Logistic Regression - Cheat Sheet.md",
     "08-machine-learning-with-python/module01/Introduction to Machine Learning.md",
