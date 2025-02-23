@@ -41,7 +41,7 @@ resembles classification but works with unlabeled data independently finding pat
 			- divisive: splits clusters (top down approach)
 				- both are intuitive and suitable for small to mid-sized data sets
 
-### k-means clustering
+## k-means clustering
 iterative, centroid-based clustering algorithm that partitions data into similar groups based on distance between centroids
 
 divides data into k non-overlapping clusters, k-clusters have *minimal variance around centroids* and *maximal dissimilarity between clusters*
@@ -64,14 +64,45 @@ k-means algorithm
 	- update cluster centroids as the mean of the data points
 - repeat until centroids stabilize or max iterations reached
 
+![[videoframe_135884.png]]
+
+
 ==doesn't work well with imbalanced clusters==
 
+![[videoframe_159303.png]]
+
+*k-means clustering considerations*
+- assumes convex clusters (any line drawn between two points remains in the cluster)
+- assumes balanced clusters sizes (clusters contain same number of points)
+- sensitive to outliers and noise
+- partition based algorithm so it is efficient and scales well to big data
+
+
+*k-means optimization*
+- minimize within-cluster sum of squares:
 $$\Large{
 \sum_{i=1}^K\sum_{x\in{C_i}}||x-\mu{_i}||^2
 }
 $$
+$\large{K}$ = number of clusters
+$\large{C_i}$ = $\large{i^{th}}$ cluster
+$\large{x}$ = data point
+$\large{\mu_i}$ = centroid of cluster $\large{C_i}$
+$\large{||x-\mu_i}||^2$ = squared distance between $\large{x}$ and its cluster's centroid
 
 
+*determining k*
+- choosing k is feasible when
+	- data is separable
+	- difficult to visualize for high-dimensional spaces
+	- consider scatterplots between variable pairs to check for separability
+
+heuristic techniques for determining k
+
+![[videoframe_403103.png]]
+- silhouette analysis - measures how similar a data point is to its cluster, known as cohesion, compared to other clusters, known as separation
+- elbow method - a plot of the k-means objective function for different numbers of clusters
+- davies-bouldin index - measures each cluster's average similarity ration, with the cluster most similar
 
 ___
 
@@ -140,9 +171,7 @@ simplify the data set for machine learning models
 
 ![[videoframe_221801.png]]
 
-
 ___
-
 # Module 4 Summary and Highlights
 
 Congratulations! You have completed this lesson. At this point in the course, you know: 
