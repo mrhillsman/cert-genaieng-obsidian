@@ -54,6 +54,22 @@ the average position of all points in the cluster
 - higher k value - number of clusters - signifies smaller clusters with greater detail
 - lower k value results in larger clusters with less detail
 
+k-means algorithm
+- initialize the algorithm
+	- choose number of clusters, k
+	- randomly select k centroids - can be data points or other points from the feature space
+- iteratively assign points to clusters and update centroids
+	- compute distance matrix - distance from each point to each centroid
+	- assign each point to cluster with nearest centroid
+	- update cluster centroids as the mean of the data points
+- repeat until centroids stabilize or max iterations reached
+
+==doesn't work well with imbalanced clusters==
+
+$$\Large{
+\sum_{i=1}^K\sum_{x\in{C_i}}||x-\mu{_i}||^2
+}
+$$
 
 
 
