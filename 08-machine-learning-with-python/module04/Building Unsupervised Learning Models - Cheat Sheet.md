@@ -12,7 +12,7 @@
 ```python
 from umap.umap_ import UMAP
 umap = UMAP(n_neighbors=15, min_dist=0.1, n_components=2)
-````
+```
 
 ## t-SNE (t-Distributed Stochastic Neighbor Embedding)
 

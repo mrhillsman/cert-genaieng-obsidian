@@ -1,8 +1,8 @@
-**Method Name:** classification_report  
-**Description:** Generates a report with precision, recall, F1-score, and support for each class in classification problems. Useful for model evaluation.  
+**Method Name:** classification_report
+**Description:** Generates a report with precision, recall, F1-score, and support for each class in classification problems. Useful for model evaluation.
 **Hyper-Parameters:**
-- `target_names`: List of labels to include in the report.  
-**Pros:** Provides a comprehensive evaluation of classification models.  
+- `target_names`: List of labels to include in the report.
+**Pros:** Provides a comprehensive evaluation of classification models.
 **Limitations:** May not provide enough insight for imbalanced datasets.
 
 ```python
@@ -15,11 +15,11 @@ report = classification_report(y_true, y_pred, target_names=["class1", "class2"]
 
 ---
 
-**Method Name:** confusion_matrix  
-**Description:** Computes a confusion matrix to evaluate the classification performance, showing counts of true positives, false positives, true negatives, and false negatives.  
+**Method Name:** confusion_matrix
+**Description:** Computes a confusion matrix to evaluate the classification performance, showing counts of true positives, false positives, true negatives, and false negatives.
 **Hyper-Parameters:**
-- `labels`: List of class labels to include.  
-**Pros:** Essential for understanding classification errors.  
+- `labels`: List of class labels to include.
+**Pros:** Essential for understanding classification errors.
 **Limitations:** Doesn't give insights into prediction probabilities.
 
 ```python
@@ -31,11 +31,11 @@ conf_matrix = confusion_matrix(y_true, y_pred)
 
 ---
 
-**Method Name:** mean_squared_error  
-**Description:** Calculates the mean squared error (MSE), a common metric for regression models. Lower values indicate better performance.  
+**Method Name:** mean_squared_error
+**Description:** Calculates the mean squared error (MSE), a common metric for regression models. Lower values indicate better performance.
 **Hyper-Parameters:**
-- `sample_weight`: Weights to apply to each sample.  
-**Pros:** Simple and widely used metric.  
+- `sample_weight`: Weights to apply to each sample.
+**Pros:** Simple and widely used metric.
 **Limitations:** Sensitive to outliers, as large errors are squared.
 
 ```python
@@ -48,11 +48,11 @@ mse = mean_squared_error(y_true, y_pred)
 
 ---
 
-**Method Name:** root_mean_squared_error  
-**Description:** Calculates the root mean squared error (RMSE), which is the square root of the MSE. RMSE gives more interpretable results as it is in the same units as the target.  
+**Method Name:** root_mean_squared_error
+**Description:** Calculates the root mean squared error (RMSE), which is the square root of the MSE. RMSE gives more interpretable results as it is in the same units as the target.
 **Hyper-Parameters:**
-- `sample_weight`: Weights to apply to each sample.  
-**Pros:** More interpretable than MSE.  
+- `sample_weight`: Weights to apply to each sample.
+**Pros:** More interpretable than MSE.
 **Limitations:** Like MSE, it can be sensitive to large errors and outliers.
 
 ```python
@@ -65,11 +65,11 @@ rmse = root_mean_squared_error(y_true, y_pred)
 
 ---
 
-**Method Name:** mean_absolute_error  
-**Description:** Measures the average magnitude of errors in predictions, without considering their direction. Useful for understanding the average error size.  
+**Method Name:** mean_absolute_error
+**Description:** Measures the average magnitude of errors in predictions, without considering their direction. Useful for understanding the average error size.
 **Hyper-Parameters:**
-- `sample_weight`: Optional sample weights.  
-**Pros:** Less sensitive to outliers compared to MSE.  
+- `sample_weight`: Optional sample weights.
+**Pros:** Less sensitive to outliers compared to MSE.
 **Limitations:** Does not penalize large errors as much as MSE or RMSE.
 
 ```python
@@ -81,9 +81,9 @@ mae = mean_absolute_error(y_true, y_pred)
 
 ---
 
-**Method Name:** r2_score  
-**Description:** Computes the coefficient of determination (R²), which represents the proportion of variance explained by the model. A higher value indicates a better fit.  
-**Pros:** Provides a clear indication of model performance.  
+**Method Name:** r2_score
+**Description:** Computes the coefficient of determination (R²), which represents the proportion of variance explained by the model. A higher value indicates a better fit.
+**Pros:** Provides a clear indication of model performance.
 **Limitations:** Doesn't always represent model quality, especially for non-linear models.
 
 ```python
@@ -95,11 +95,11 @@ r2 = r2_score(y_true, y_pred)
 
 ---
 
-**Method Name:** silhouette_score  
-**Description:** Measures the quality of clustering by assessing the cohesion within clusters and separation between clusters. Higher scores indicate better clustering.  
+**Method Name:** silhouette_score
+**Description:** Measures the quality of clustering by assessing the cohesion within clusters and separation between clusters. Higher scores indicate better clustering.
 **Hyper-Parameters:**
-- `metric`: Distance metric to use.  
-**Pros:** Useful for validating clustering performance.  
+- `metric`: Distance metric to use.
+**Pros:** Useful for validating clustering performance.
 **Limitations:** Sensitive to outliers and choice of distance metric.
 
 ```python
@@ -111,11 +111,11 @@ score = silhouette_score(X, labels, metric='euclidean')
 
 ---
 
-**Method Name:** silhouette_samples  
-**Description:** Provides silhouette scores for each individual sample, indicating how well it fits its assigned cluster.  
+**Method Name:** silhouette_samples
+**Description:** Provides silhouette scores for each individual sample, indicating how well it fits its assigned cluster.
 **Hyper-Parameters:**
-- `metric`: Distance metric to use.  
-**Pros:** Offers granular insight into each sample's clustering quality.  
+- `metric`: Distance metric to use.
+**Pros:** Offers granular insight into each sample's clustering quality.
 **Limitations:** Same as silhouette_score; sensitive to outliers and distance metric.
 
 ```python
@@ -127,9 +127,9 @@ samples = silhouette_samples(X, labels, metric='euclidean')
 
 ---
 
-**Method Name:** davies_bouldin_score  
-**Description:** Measures the average similarity ratio of each cluster with the most similar cluster. Lower values indicate better clustering.  
-**Pros:** Provides a simple, effective clustering evaluation.  
+**Method Name:** davies_bouldin_score
+**Description:** Measures the average similarity ratio of each cluster with the most similar cluster. Lower values indicate better clustering.
+**Pros:** Provides a simple, effective clustering evaluation.
 **Limitations:** May not work well with highly imbalanced clusters.
 
 ```python
@@ -141,9 +141,9 @@ db_score = davies_bouldin_score(X, labels)
 
 ---
 
-**Method Name:** Voronoi  
-**Description:** Computes the Voronoi diagram, which partitions space based on the nearest neighbor.  
-**Pros:** Useful for spatial analysis and clustering.  
+**Method Name:** Voronoi
+**Description:** Computes the Voronoi diagram, which partitions space based on the nearest neighbor.
+**Pros:** Useful for spatial analysis and clustering.
 **Limitations:** Limited to use cases that involve spatial partitioning of data.
 
 ```python
@@ -154,11 +154,11 @@ vor = Voronoi(points)
 
 ---
 
-**Method Name:** voronoi_plot_2d  
-**Description:** Plots the Voronoi diagram in 2D for visualizing clustering results.  
+**Method Name:** voronoi_plot_2d
+**Description:** Plots the Voronoi diagram in 2D for visualizing clustering results.
 **Hyper-Parameters:**
-- `show_vertices`: Whether to display the vertices.  
-**Pros:** Great for visualizing spatial clustering.  
+- `show_vertices`: Whether to display the vertices.
+**Pros:** Great for visualizing spatial clustering.
 **Limitations:** Limited to 2D spaces and large datasets may cause performance issues.
 
 ```python
@@ -169,11 +169,11 @@ voronoi_plot_2d(vor, show_vertices=True)
 
 ---
 
-**Method Name:** matplotlib.patches.Patch  
-**Description:** Creates custom shapes such as rectangles, circles, or ellipses for adding to plots.  
+**Method Name:** matplotlib.patches.Patch
+**Description:** Creates custom shapes such as rectangles, circles, or ellipses for adding to plots.
 **Hyper-Parameters:**
-- `color`: Fills color of the shape.  
-**Pros:** Versatile for visual customization.  
+- `color`: Fills color of the shape.
+**Pros:** Versatile for visual customization.
 **Limitations:** May not support all shapes or complex customizations.
 
 ```python
@@ -184,9 +184,9 @@ rectangle = patches.Rectangle((0, 0), 1, 1, color='blue')
 
 ---
 
-**Method Name:** explained_variance_score  
-**Description:** Measures the proportion of variance explained by the model's predictions. A higher score indicates better performance.  
-**Pros:** Helps in assessing the fit of regression models.  
+**Method Name:** explained_variance_score
+**Description:** Measures the proportion of variance explained by the model's predictions. A higher score indicates better performance.
+**Pros:** Helps in assessing the fit of regression models.
 **Limitations:** Not suitable for classification tasks.
 
 ```python
@@ -198,11 +198,11 @@ ev_score = explained_variance_score(y_true, y_pred)
 
 ---
 
-**Method Name:** Ridge regression  
-**Description:** Performs ridge regression (L2 regularization) to avoid overfitting by penalizing large coefficients.  
+**Method Name:** Ridge regression
+**Description:** Performs ridge regression (L2 regularization) to avoid overfitting by penalizing large coefficients.
 **Hyper-Parameters:**
-- `alpha`: Regularization strength.  
-**Pros:** Helps reduce overfitting in regression models.  
+- `alpha`: Regularization strength.
+**Pros:** Helps reduce overfitting in regression models.
 **Limitations:** May not work well with sparse data.
 
 ```python
@@ -213,11 +213,11 @@ ridge = Ridge(alpha=1.0)
 
 ---
 
-**Method Name:** Lasso regression  
-**Description:** Performs lasso regression (L1 regularization), which encourages sparsity by penalizing the absolute value of coefficients.  
+**Method Name:** Lasso regression
+**Description:** Performs lasso regression (L1 regularization), which encourages sparsity by penalizing the absolute value of coefficients.
 **Hyper-Parameters:**
-- `alpha`: Regularization strength.  
-**Pros:** Encourages sparse solutions, useful for feature selection.  
+- `alpha`: Regularization strength.
+**Pros:** Encourages sparse solutions, useful for feature selection.
 **Limitations:** May struggle with multicollinearity.
 
 ```python
@@ -228,9 +228,9 @@ lasso = Lasso(alpha=0.1)
 
 ---
 
-**Method Name:** Pipeline  
-**Description:** Chains multiple steps of preprocessing and modeling into a single object, ensuring efficient workflow.  
-**Pros:** Simplifies code, ensures reproducibility.  
+**Method Name:** Pipeline
+**Description:** Chains multiple steps of preprocessing and modeling into a single object, ensuring efficient workflow.
+**Pros:** Simplifies code, ensures reproducibility.
 **Limitations:** May not work well with complex pipelines requiring dynamic configurations.
 
 ```python
@@ -241,11 +241,11 @@ pipeline = Pipeline(steps=[('scaler', StandardScaler()), ('model', Ridge(alpha=1
 
 ---
 
-**Method Name:** GridSearchCV  
-**Description:** Performs exhaustive search over a specified parameter grid to find the best model configuration.  
+**Method Name:** GridSearchCV
+**Description:** Performs exhaustive search over a specified parameter grid to find the best model configuration.
 **Hyper-Parameters:**
-- `param_grid`: Dictionary of parameter grids.  
-**Pros:** Ensures optimal model parameters.  
+- `param_grid`: Dictionary of parameter grids.
+**Pros:** Ensures optimal model parameters.
 **Limitations:** Computationally expensive for large grids.
 
 ```python
@@ -257,9 +257,9 @@ grid_search = GridSearchCV(estimator=Ridge(), param_grid={'alpha': [0.1, 1.0, 10
 
 ___
 
-**Process Name:** Multiple runs of k-means  
-**Description:** Executes KMeans clustering multiple times with different random initializations to assess variability in cluster assignments.  
-**Advantage:** Helps visualize consistency.  
+**Process Name:** Multiple runs of k-means
+**Description:** Executes KMeans clustering multiple times with different random initializations to assess variability in cluster assignments.
+**Advantage:** Helps visualize consistency.
 **Limitation:** Computationally costly for large datasets.
 
 ```python
@@ -294,9 +294,9 @@ for i, inertia in enumerate(inertia_values, start=1):
 
 ---
 
-**Process Name:** Elbow method  
-**Description:** Evaluates the optimal number of clusters by plotting inertia (within-cluster sum of squares) for different _k_ values.  
-**Advantage:** Easy to interpret.  
+**Process Name:** Elbow method
+**Description:** Evaluates the optimal number of clusters by plotting inertia (within-cluster sum of squares) for different _k_ values.
+**Advantage:** Easy to interpret.
 **Limitation:** Subjective elbow point.
 
 ```python
@@ -323,9 +323,9 @@ plt.ylabel('Inertia')
 
 ---
 
-**Process Name:** Silhouette method  
-**Description:** Determines the optimal number of clusters by evaluating Silhouette Scores for different _k_ values.  
-**Advantage:** Considers both cohesion and separation.  
+**Process Name:** Silhouette method
+**Description:** Determines the optimal number of clusters by evaluating Silhouette Scores for different _k_ values.
+**Advantage:** Considers both cohesion and separation.
 **Limitation:** High computation for large datasets.
 
 ```python
@@ -350,9 +350,9 @@ plt.ylabel('Silhouette Score')
 
 ---
 
-**Process Name:** Davies-Bouldin Index  
-**Description:** Evaluates clustering performance by calculating the Davies-Bouldin Index (DBI) for different _k_ values.  
-**Advantage:** Quantifies compactness and separation.  
+**Process Name:** Davies-Bouldin Index
+**Description:** Evaluates clustering performance by calculating the Davies-Bouldin Index (DBI) for different _k_ values.
+**Advantage:** Quantifies compactness and separation.
 **Limitation:** Sensitive to cluster shapes and density.
 
 ```python
