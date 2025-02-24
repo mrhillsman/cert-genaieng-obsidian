@@ -106,11 +106,60 @@ heuristic techniques for determining k
 
 ___
 
+## DBSCAN and HDBSCAN Clustering
+
+### DBSCAN
+density-based spatial clustering algorithm
+creates clusters centered around spatial centroids
+user provides density value
+
+discovers clusters of any shape, size, or density
+distinguishes between data points that are part of a cluster and noise
+useful for data with outliers or when cluster number is unknown
+
+==not iterative, grows clusters in one pass without updating them once they are labeled, and any unassigned points remaining are regarded as noise==
+
+![[videoframe_91954.png]]
+
+*DBSCAN algorithm*
+- given a data set, select 2 parameters: $\large{N, epsilon}$
+	- $\large{N}$ = number of points in the neighborhood
+	- $\large{epsilon}$ = radius of the neighborhood
+- label all data points as:
+	- core point - has at least $\large{N}$ points within the $\large{epsilon}$ neighborhood
+	- border point - non-core points within a core-point neighborhood
+	- noise point - isolated from all core-point neighborhoods
+	- clusters - core points and border points
+	- noise - non-clustered points
+
+![[videoframe_142902.png]]
+
+![[videoframe_168441.png]]
+
+
+### HDBSCAN
+variant of DBSCAN that doesn't require any parameters to be set
+less sensitive to noise and outliers
+
+- uses cluster stability - cluster persistence over a range of neighborhood sizes (*a cluster's ability to not change much when the neighboring size is adjusted within a reasonable range of radii*)
+- locally adjusts neighborhood radii for cluster stability
+- improves clustering for variable-density and noisy data
+
+*HDBSCAN algorithm* (somewhat complex)
+- combination of agglomerative and density-based clustering
+- starts by identifying each point as its own cluster (effectively noise)
+- progressively agglomerates clusters into a hierarchy by incrementally lowering the density threshold constructing a hierarchical tree
+- gets simplified into a condensed tree where only the most stable clusters across different density levels are kept 
+
+
+___
+
 ## Dimension Reduction and Feature Engineering
-clustering, dimension reduction, and feature engineering are complementary techniques in machine learning and data science
-work together to improve model performance, quality, and interpretability
-clustering -> helps with feature selection and creation, supports dimension reduction, enhances computational efficiency and scalability
-dimension reduction -> simplifies visualization of high-dimensional clustering, aids in feature engineering and improves model quality, reduces the number of features required
+clustering, dimension reduction, and feature engineering are complementary techniques in machine learning and data science, work together to improve model performance, quality, and interpretability
+
+clustering -> helps with feature selection and creation, while supporting dimension reduction, to enhance computational efficiency and scalability
+
+dimension reduction -> simplifies the visualization of high-dimensional clustering, aids in feature engineering and improves model quality, reduces the number of features required for a data model
 
 **dimension reduction before clustering**
 - commonly used as a preprocessing step for clustering
@@ -119,6 +168,7 @@ dimension reduction -> simplifies visualization of high-dimensional clustering, 
 	- PCA (principle component analysis)
 	- t-SNE (tee-snee)
 	- UMAP
+
 **dimension reduction after clustering**
 - clustering results are impacted beyond three dimensions
 - advanced dimension reduction techniques
@@ -163,9 +213,22 @@ simplify the data set for machine learning models
 	- scales better than t-SNE
 	- preserves the global structure of the data often providing higher cluster performance than t-SNE
 
+
+*simulated data using scikit-learn make_blobs*
+same data from two different perspectives (above and looking at an edge)
+you can see there is a little overlap between the yellow and purple clusters
+we will project the data onto two dimensions using pca, t-sne, and umap
+
 ![[videoframe_183472.png]]
 
+PCA
+- blobs separated effectively
+- normally distributed
+- only differences between them are their means and variances (blobs are linearly correlated so PCA is expected to perform well)
+
 ![[videoframe_193472.png]]
+
+t-SNE
 
 ![[videoframe_205935.png]]
 
