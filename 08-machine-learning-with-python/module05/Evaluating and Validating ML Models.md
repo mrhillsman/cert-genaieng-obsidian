@@ -16,6 +16,7 @@ What is supervised learning evaluation?
 
 ==common metrics for evaluating classification models==
 - accuracy - the ratio of correctly predicted instances to the total number of instances in the data set
+	- the number of correctly classified observations and dividing it by the number of observations
 
 ![[videoframe_151294.png]]
 
@@ -24,16 +25,22 @@ What is supervised learning evaluation?
 ![[videoframe_183218.png]]
 
 - precision - how many of the predicted positive instances are actually positive
+	- true positives divided by the sum of true and false positives
 
 ![[videoframe_267697.png]]
 
 - recall - how many of the actual positive instances are correctly predicted
+	- true positives divided by the sum of true positives and false negatives
+	- when opportunity costs is more important recall may be a more important metric
 
 ![[videoframe_301642.png]]
 
 - f1 score - combines precision and recall to represent a model's accuracy
+	- cases where precision and recall are equally important
 
 ![[videoframe_326433.png]]
+
+*The weighted average of the metrics is weighted by the support of each class, or number of flowers in each class*
 
 ![[videoframe_345199.png]]
 
@@ -41,8 +48,21 @@ What is supervised learning evaluation?
 ___
 
 ## Regression Metrics and Evaluation Techniques
+- regression models make prediction errors
+- evaluating a regression model is determining how accurately it can predict continuous numerical values
+
+*Provide insight into a model's performances (accuracy, error distribution, error magnitude)*
+- MAE, or Mean Absolute Error, is the average absolute difference between the values fitted by the model and the observed historical data.
+- MSE, or Mean Squared Error, is the sum of the squared difference between the values fitted by the model and observed values divided by the number of historical points minus the number of parameters in the model.
+- RMSE, or Root Mean Squared Error, is the square root of the MSE.
+	- popular evaluation metric because it has the same units as the target variable, making it easier to interpret than MSE.
+- R-squared is the amount of variance in the dependent variable that the independent variable can explain.
+	- also called coefficient of determination and measures the model's goodness of fit.
+	- values range from 0 to 1, with 0 being a badly fit model and 1 being a perfect model.
 
 ![[videoframe_114559.png]]
+
+*Explained variance is the sum of squared differences between the predictions and the average value of the actual target data*
 
 ![[videoframe_163385.png]]
 
