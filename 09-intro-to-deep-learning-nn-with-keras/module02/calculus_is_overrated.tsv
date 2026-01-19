@@ -1,0 +1,209 @@
+start	end	text
+0	1600	Let us talk about calculus.
+2460	5380	I guess you all are familiar with the equation of a line.
+5980	8460	We all have studied it in our school days, right?
+8880	11800	We write it something like y equals x,
+12240	15500	where if we have this line, then at every point on the line,
+15820	19020	the value of y depends on the value of x.
+19520	24640	For example, if x equals 2, then y equals 2, right?
+24640	29300	This relationship shows how y changes as x changes.
+30000	32400	But this kind of relationship is easy to visualize
+32400	36840	because it's a straight line, constant and predictable.
+37560	42160	Now, imagine you're a curious thinker in the 1600s,
+42620	46380	when the world was just beginning to explore the motion of planets,
+46980	51660	the falling of objects, and how things move and change over time.
+52000	54580	Straight lines didn't cut it anymore.
+55400	58260	Things in nature didn't always behave predictably
+58260	59980	or move in straight lines.
+60000	66000	Think of a ball rolling down a hill, or water flowing into a basin.
+66000	71000	How do we even begin to describe such motion mathematically?
+71000	74000	Let's go back to the straight line for a moment.
+74000	77000	A straight line has a very special property.
+77000	79000	It has a constant slope.
+79000	82000	The slope tells us how steep the line is.
+82000	86000	That is how much y changes when x changes.
+86000	90000	For y equals x, the slope is constant.
+90000	94000	y equals 1, meaning for every one step forward in x,
+94000	97000	y goes up by 1, right?
+97000	102000	Now consider another line, y equals 2 times x.
+102000	107000	The slope of this line is 2, meaning that for every one step forward in x,
+107000	110000	y now goes up by 2.
+110000	114000	In other words, this line is much steeper than the first one.
+114000	118000	Therefore, slope is like a measure of the line's steepness.
+118000	122000	It tells us how fast y is changing compared to x.
+122000	126000	Now, imagine a situation where the slope is 0.
+126000	130000	For instance, if you have a line like y equals 3,
+130000	132000	a horizontal line,
+132000	135000	then we know that the slope of this line is 0,
+135000	138000	because y doesn't change at all,
+138000	141000	no matter how much x changes.
+141000	145000	On the other hand, if the slope is a very large number,
+145000	147000	the line is super steep,
+147000	149000	almost vertical.
+149000	151000	I think you understood my point.
+151000	155000	But then, someone like Galileo might come along and say,
+155000	159000	What about something like y equals x squared?
+159000	161000	That's not a straight line.
+161000	163000	It's a curve.
+163000	167000	For example, we all know that distance equals speed into time.
+167000	171000	Now assume you are running at a constant speed,
+171000	173000	say 2 meters per second.
+173000	176000	So d will now be equal to 2t,
+176000	181000	where d is the distance and t is the time, right?
+181000	185000	Now if I draw this graph where I put time on x-axis
+185000	187000	and distance on y-axis,
+187000	189000	then we get this straight line,
+189000	194000	and the slope of this line will be the same as your constant speed of 2.
+194000	197000	But now, assume you start running in a race,
+197000	200000	and instead of maintaining a constant speed,
+200000	204000	you begin slowly and then gradually speed up.
+204000	205000	At first,
+205000	208000	you might cover only 1 meter in the first second,
+208000	210000	which is equal to this point,
+210000	212000	then 3 meters in the second second,
+212000	215000	and perhaps 6 meters in the third second.
+215000	219000	The distance you cover is no longer proportional to time,
+219000	224000	and the graph of distance versus time will no longer be a straight line.
+224000	226000	It will be a curve.
+226000	227000	In this case,
+227000	229000	your speed or the slope of the graph,
+229000	231000	or the steepness of the curve,
+231000	233000	keeps changing.
+233000	234000	At the start,
+234000	238000	your speed or the slope is small because you're running slowly.
+238000	239000	As you speed up,
+239000	241000	the slope becomes steeper,
+241000	245000	showing that the distance you cover in each second is increasing.
+245000	248000	Therefore, at any given moment,
+248000	253000	the slope of the curve represents your speed at that exact point in time.
+253000	255000	Back in the 1600s,
+255000	257000	this was a huge problem.
+257000	259000	The slope wasn't constant anymore.
+259000	261000	People could draw the curve,
+261000	263000	but they had no idea how to calculate the slope
+263000	265000	at any specific point on it.
+265000	268000	And then came geniuses like Isaac Newton
+268000	271000	and Gottfried Wilhelm Leibniz
+271000	273000	in the late 1600s.
+273000	275000	Both of them,
+275000	276000	working separately,
+276000	279000	came up with a groundbreaking idea.
+279000	282000	Instead of thinking about the whole curve at once,
+282000	285000	they zoomed in really, really close,
+285000	289000	so close that the curve looked almost like a straight line.
+289000	292000	This is how the concept of the derivative was born.
+292000	296000	We all know that if we have two points like this on a straight line,
+296000	305000	then its slope is given as y2-y1 over x2-x1.
+305000	309000	Newton and Leibniz realized that to find the slope of a curve,
+309000	313000	you could look at two points getting closer and closer together,
+313000	317000	such that they could find the exact slope at a single point.
+317000	319000	But how does it work?
+319000	321000	Let us understand this with an example.
+322000	326000	Suppose we have a curve y equals x2.
+326000	331000	Now if we want to find the slope of this curve at say x equals 1,
+331000	333000	then assume we take two points
+333000	335000	where the first point is obviously 1
+335000	338000	and 1 square or 1 itself.
+338000	341000	And then let us take another very close point,
+341000	344000	say x equals 1.1
+344000	348000	and y equals 1.1 square or 1.21.
+348000	351000	Now these two points are so close to each other
+351000	355000	that the curve here behaves almost as a straight line.
+355000	358000	So what will be the value of this slope?
+358000	362000	It will be this minus this over 1.1 minus 1, right?
+362000	366000	This gives the value of slope at this point as 2.1.
+366000	368000	This is simply amazing.
+368000	371000	Now let us level up our gear a bit more.
+371000	376000	Assume we have a point as x and the y value as x square.
+376000	379000	And another point at some distance h from x,
+379000	381000	say x plus x.
+381000	383000	This will be x plus h,
+383000	388000	such that its y value will be x plus h whole square.
+388000	391000	So now what will be the slope of this line?
+391000	398000	It will be x plus h whole square minus x square over x plus h minus x.
+398000	400000	Look at the denominator.
+400000	404000	x will get cancelled out and we are only left with h.
+404000	407000	Now expand the numerator to get this as
+407000	411000	x square plus 2x times h plus h square
+411000	413000	and minus this x square.
+413000	416000	Oh look, now x square will get cancelled out
+416000	421000	and we are left with 2x times h plus h square over h.
+421000	425000	Divide it properly to remove h from the denominator
+425000	429000	and we are left with 2x plus h.
+429000	431000	Here comes the magic.
+431000	434000	We want both these points to be as close as possible,
+434000	437000	which means this h is so so small
+437000	440000	that it is almost invisible to our naked eye.
+441000	444000	Thus we say that h tends to zero.
+444000	447000	And since h is not exactly zero,
+447000	449000	we put this lim here,
+449000	451000	which stands for limit,
+451000	453000	which means what is the value of this thing
+453000	456000	when h is very close to zero.
+456000	458000	And to solve for it,
+458000	460000	we put h as zero,
+460000	465000	which gives us 2x as the slope of the curve y equals x square.
+465000	468000	So we say that the derivative of y,
+468000	471000	which is represented using dy over dx,
+471000	476000	which indicates the change in y with respect to x at a given point,
+476000	480000	is 2x when y equals x square.
+480000	482000	Now at x equals 1,
+482000	487000	what will be the derivative of y with respect to x?
+487000	488000	Or in other words,
+488000	492000	what will be the slope of this curve at x equals 1?
+492000	497000	Just substitute x as 1 here and we are done.
+497000	501000	The slope of this curve at x equals 1 is 2, right?
+501000	506000	We solved it previously and got our answer as 2.1, remember?
+506000	508000	Which was so close to 2,
+508000	510000	but not exactly 2,
+510000	513000	because the value of h was 0.1,
+513000	517000	which although small but was not very close to zero.
+517000	519000	Now to generalize this,
+519000	521000	instead of using x square,
+521000	525000	assume we denote y as a function of x or f of x.
+525000	527000	Now at this point x,
+527000	530000	we have y as f of x,
+530000	533000	at this point which is x plus h,
+533000	535000	we have y or the output
+535000	540000	when the input is x plus h as f of x plus h.
+540000	542000	So the slope of this line will be
+542000	549000	f of x plus h minus f of x over x plus h minus x, right?
+549000	551000	This will get cancelled out
+551000	556000	and we are left with f of x plus h minus f of x over h.
+556000	559000	Finally, we put a limit here which shows
+559000	562000	h tends to zero and that's it.
+562000	566000	This is the derivative of the function y or f of x
+566000	568000	with respect to x.
+568000	571000	Now using the method I have just shown you,
+571000	574000	mathematicians have already calculated derivatives
+574000	577000	of some famous functions like these.
+581000	584000	So our life has now become super easy.
+584000	586000	So using this formula,
+586000	588000	or deriving on your own,
+588000	590000	now can tell me in the comments
+590000	597000	what will be the derivative of the curve y equals x cube at x equals 2.
+597000	600000	This simple idea of zooming in on a curve
+600000	602000	and finding its slope
+602000	604000	has transformed how we understand
+604000	607000	and solve problems in the world around us.
+607000	610000	Suddenly, derivatives became a universal language
+610000	612000	for describing change
+612000	614000	and it is used in our day-to-day life,
+614000	616000	starting from measuring speed
+616000	618000	to predicting stock prices.
+618000	621000	Tracking heart rate changes in medicine
+621000	624000	and analyzing an athlete's speed during a race.
+624000	626000	They help in weather forecasting
+626000	628000	by predicting temperature changes,
+628000	631000	studying population growth in biology,
+631000	633000	answering questions like
+633000	635000	why planets orbit in ellipses
+635000	639000	and calculating marginal costs in economics.
+639000	642000	Derivatives also control robotic movements,
+642000	644000	optimize traffic flow,
+644000	646000	enhance sound engineering
+646000	649000	and even monitor the spread of diseases.
+649000	652000	Now if this video gets 3,000 likes,
+652000	655000	then I will bring another banger video on calculus,
+655000	658000	which will be much more interesting than this one.
+658000	660000	So good!

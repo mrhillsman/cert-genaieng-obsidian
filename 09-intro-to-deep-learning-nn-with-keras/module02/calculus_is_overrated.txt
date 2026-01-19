@@ -1,0 +1,208 @@
+Let us talk about calculus.
+I guess you all are familiar with the equation of a line.
+We all have studied it in our school days, right?
+We write it something like y equals x,
+where if we have this line, then at every point on the line,
+the value of y depends on the value of x.
+For example, if x equals 2, then y equals 2, right?
+This relationship shows how y changes as x changes.
+But this kind of relationship is easy to visualize
+because it's a straight line, constant and predictable.
+Now, imagine you're a curious thinker in the 1600s,
+when the world was just beginning to explore the motion of planets,
+the falling of objects, and how things move and change over time.
+Straight lines didn't cut it anymore.
+Things in nature didn't always behave predictably
+or move in straight lines.
+Think of a ball rolling down a hill, or water flowing into a basin.
+How do we even begin to describe such motion mathematically?
+Let's go back to the straight line for a moment.
+A straight line has a very special property.
+It has a constant slope.
+The slope tells us how steep the line is.
+That is how much y changes when x changes.
+For y equals x, the slope is constant.
+y equals 1, meaning for every one step forward in x,
+y goes up by 1, right?
+Now consider another line, y equals 2 times x.
+The slope of this line is 2, meaning that for every one step forward in x,
+y now goes up by 2.
+In other words, this line is much steeper than the first one.
+Therefore, slope is like a measure of the line's steepness.
+It tells us how fast y is changing compared to x.
+Now, imagine a situation where the slope is 0.
+For instance, if you have a line like y equals 3,
+a horizontal line,
+then we know that the slope of this line is 0,
+because y doesn't change at all,
+no matter how much x changes.
+On the other hand, if the slope is a very large number,
+the line is super steep,
+almost vertical.
+I think you understood my point.
+But then, someone like Galileo might come along and say,
+What about something like y equals x squared?
+That's not a straight line.
+It's a curve.
+For example, we all know that distance equals speed into time.
+Now assume you are running at a constant speed,
+say 2 meters per second.
+So d will now be equal to 2t,
+where d is the distance and t is the time, right?
+Now if I draw this graph where I put time on x-axis
+and distance on y-axis,
+then we get this straight line,
+and the slope of this line will be the same as your constant speed of 2.
+But now, assume you start running in a race,
+and instead of maintaining a constant speed,
+you begin slowly and then gradually speed up.
+At first,
+you might cover only 1 meter in the first second,
+which is equal to this point,
+then 3 meters in the second second,
+and perhaps 6 meters in the third second.
+The distance you cover is no longer proportional to time,
+and the graph of distance versus time will no longer be a straight line.
+It will be a curve.
+In this case,
+your speed or the slope of the graph,
+or the steepness of the curve,
+keeps changing.
+At the start,
+your speed or the slope is small because you're running slowly.
+As you speed up,
+the slope becomes steeper,
+showing that the distance you cover in each second is increasing.
+Therefore, at any given moment,
+the slope of the curve represents your speed at that exact point in time.
+Back in the 1600s,
+this was a huge problem.
+The slope wasn't constant anymore.
+People could draw the curve,
+but they had no idea how to calculate the slope
+at any specific point on it.
+And then came geniuses like Isaac Newton
+and Gottfried Wilhelm Leibniz
+in the late 1600s.
+Both of them,
+working separately,
+came up with a groundbreaking idea.
+Instead of thinking about the whole curve at once,
+they zoomed in really, really close,
+so close that the curve looked almost like a straight line.
+This is how the concept of the derivative was born.
+We all know that if we have two points like this on a straight line,
+then its slope is given as y2-y1 over x2-x1.
+Newton and Leibniz realized that to find the slope of a curve,
+you could look at two points getting closer and closer together,
+such that they could find the exact slope at a single point.
+But how does it work?
+Let us understand this with an example.
+Suppose we have a curve y equals x2.
+Now if we want to find the slope of this curve at say x equals 1,
+then assume we take two points
+where the first point is obviously 1
+and 1 square or 1 itself.
+And then let us take another very close point,
+say x equals 1.1
+and y equals 1.1 square or 1.21.
+Now these two points are so close to each other
+that the curve here behaves almost as a straight line.
+So what will be the value of this slope?
+It will be this minus this over 1.1 minus 1, right?
+This gives the value of slope at this point as 2.1.
+This is simply amazing.
+Now let us level up our gear a bit more.
+Assume we have a point as x and the y value as x square.
+And another point at some distance h from x,
+say x plus x.
+This will be x plus h,
+such that its y value will be x plus h whole square.
+So now what will be the slope of this line?
+It will be x plus h whole square minus x square over x plus h minus x.
+Look at the denominator.
+x will get cancelled out and we are only left with h.
+Now expand the numerator to get this as
+x square plus 2x times h plus h square
+and minus this x square.
+Oh look, now x square will get cancelled out
+and we are left with 2x times h plus h square over h.
+Divide it properly to remove h from the denominator
+and we are left with 2x plus h.
+Here comes the magic.
+We want both these points to be as close as possible,
+which means this h is so so small
+that it is almost invisible to our naked eye.
+Thus we say that h tends to zero.
+And since h is not exactly zero,
+we put this lim here,
+which stands for limit,
+which means what is the value of this thing
+when h is very close to zero.
+And to solve for it,
+we put h as zero,
+which gives us 2x as the slope of the curve y equals x square.
+So we say that the derivative of y,
+which is represented using dy over dx,
+which indicates the change in y with respect to x at a given point,
+is 2x when y equals x square.
+Now at x equals 1,
+what will be the derivative of y with respect to x?
+Or in other words,
+what will be the slope of this curve at x equals 1?
+Just substitute x as 1 here and we are done.
+The slope of this curve at x equals 1 is 2, right?
+We solved it previously and got our answer as 2.1, remember?
+Which was so close to 2,
+but not exactly 2,
+because the value of h was 0.1,
+which although small but was not very close to zero.
+Now to generalize this,
+instead of using x square,
+assume we denote y as a function of x or f of x.
+Now at this point x,
+we have y as f of x,
+at this point which is x plus h,
+we have y or the output
+when the input is x plus h as f of x plus h.
+So the slope of this line will be
+f of x plus h minus f of x over x plus h minus x, right?
+This will get cancelled out
+and we are left with f of x plus h minus f of x over h.
+Finally, we put a limit here which shows
+h tends to zero and that's it.
+This is the derivative of the function y or f of x
+with respect to x.
+Now using the method I have just shown you,
+mathematicians have already calculated derivatives
+of some famous functions like these.
+So our life has now become super easy.
+So using this formula,
+or deriving on your own,
+now can tell me in the comments
+what will be the derivative of the curve y equals x cube at x equals 2.
+This simple idea of zooming in on a curve
+and finding its slope
+has transformed how we understand
+and solve problems in the world around us.
+Suddenly, derivatives became a universal language
+for describing change
+and it is used in our day-to-day life,
+starting from measuring speed
+to predicting stock prices.
+Tracking heart rate changes in medicine
+and analyzing an athlete's speed during a race.
+They help in weather forecasting
+by predicting temperature changes,
+studying population growth in biology,
+answering questions like
+why planets orbit in ellipses
+and calculating marginal costs in economics.
+Derivatives also control robotic movements,
+optimize traffic flow,
+enhance sound engineering
+and even monitor the spread of diseases.
+Now if this video gets 3,000 likes,
+then I will bring another banger video on calculus,
+which will be much more interesting than this one.
+So good!

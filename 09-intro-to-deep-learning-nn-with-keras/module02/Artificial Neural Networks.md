@@ -11,6 +11,13 @@
 ![[videoframe_275895.png]]
 
 
+How do we determine the best value of w?
+- start with a random value for w - 0.2
+- to determine which direction to move compute the gradient of the lost function at the current value of w
+- gradient is given by the slope of the tangent at w = 0.2 and the magnitude of the step is determined by the learning rate
+
+w1 -> w0 - n (learning rate) times delta J over delta w (slope of the tangent at w=0.2)
+
 
 
 # Gradient Descent - Student Notes
@@ -548,3 +555,16 @@ print(f"w2: {w2}, b2: {b2}")
 - **Gradient**: The partial derivatives that indicate how to change weights to reduce error
 - **Learning Rate**: Parameter controlling the size of weight updates
 - **Sigmoid Function**: Activation function $f(z) = \frac{1}{1+e^{-z}}$ that outputs values between 0 and 1
+
+
+## Activation Functions
+
+Types of Activation Functions
+ - Binary step
+ - Linear
+ - Sigmoid (remember: can lead to vanishing gradient)
+ - Hyperbolic tangent (tanh)
+ - Rectified linear unit (ReLU)
+ - Leaky ReLU
+ - Softmax
+

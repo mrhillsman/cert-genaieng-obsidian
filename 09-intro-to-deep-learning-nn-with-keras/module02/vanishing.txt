@@ -1,0 +1,28 @@
+Welcome to Vanishing Gradient. After watching this
+video, you'll be able to understand the concept of the vanishing gradient
+problem and describe the characteristics of the vanishing gradient problem. In this video,
+we will discuss a problem with the sigmoid activation function that prevented neural
+networks from booming sooner. This problem is the vanishing gradient problem. You may recall from another course video
+that with a very simple network of two neurons only, the derivatives of the error with respect
+to the weights were as follows. See how small the gradients are, but more importantly,
+how small the gradients of the error with respect to W1? Well, it turns out that,
+because we're using the sigmoid function as the activation function, all the intermediate
+values in the network are between 0 and 1. When we do backpropagation, we multiply
+factors that are less than 1 by each other, and their gradients tend to get smaller and
+smaller as we move backward in the network. This means that the neurons in the earlier
+layers learn very slowly compared to those in the latter layers of the network.
+The earlier layers in the network are the slowest to train. The result is a training process that takes
+too long and a prediction accuracy that is compromised. Accordingly, we do not use the sigmoid or
+similar functions as activation functions since they're prone to the vanishing gradient
+problem. In this video, you learned that the problem with the sigmoid activation function
+that prevented neural networks from booming sooner is known as the vanishing gradient problem.
+In a very simple network of two neurons only, the gradients are smaller, but more importantly,
+the gradients of the error with respect to W1 is very small. Because we are using the
+sigmoid function as the activation function, then all the intermediate values in the
+network are between 0 and 1. When we do backpropagation, we keep multiplying
+factors that are less than 1 by each other, so their gradients tend to get smaller and
+smaller as we keep moving backwards in the network. Neurons in the earlier layers of the network
+learn very slowly compared to the neurons in the later layers. As the earlier layers are
+the slowest to train, the training process takes too long, and prediction accuracy is
+compromised. And we don't use the sigmoid function or similar functions as activation
+functions since they're prone to the vanishing gradient problem.

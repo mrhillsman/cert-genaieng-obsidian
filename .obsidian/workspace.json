@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "09-intro-to-deep-learning-nn-with-keras/module02/Artificial Neural Networks.md",
+                "file": "11-gen-ai-foundation-models-nlp/Word2Vec and s2s Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Artificial Neural Networks"
+              "title": "Word2Vec and s2s Models"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "03c22f7e78a99d91",
@@ -191,6 +190,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "zk-prefixer:Create new unique note": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -200,13 +201,23 @@
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "markdown-importer:Open format converter": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0e91e7f7acfbb525",
+  "active": "0857597540d23c4b",
   "lastOpenFiles": [
+    "Untitled.md",
+    "11-gen-ai-foundation-models-nlp/Word2Vec and s2s Models.md",
+    "11-gen-ai-foundation-models-nlp/Converting Words to Features.md",
+    "09-intro-to-deep-learning-nn-with-keras/module02/Artificial Neural Networks.md",
+    "09-intro-to-deep-learning-nn-with-keras/module01/Introduction to Neural Networks and Deep Learning.md",
+    "09-intro-to-deep-learning-nn-with-keras/module01/Introduction to Neural Networks and Deep Learning - Cheat Sheet.md",
+    "01-introduction-to-artificial-intelligence/modules/01-intro-and-apps-of-ai/Notes.md",
+    "07-data-analysis-with-python/module01/Data Analysis with Python.md",
+    "09-intro-to-deep-learning-nn-with-keras/module02/Artificial Neural Networks - Cheat Sheet.md",
+    "09-intro-to-deep-learning-nn-with-keras/module02/vanishing-gradient-notes.md",
+    "09-intro-to-deep-learning-nn-with-keras/module02/Unconfirmed 966416.crdownload",
     "studyshots/videoframe_543573.png",
     "studyshots/videoframe_543573.png.crdownload",
     "videoframe_543573.png",
@@ -225,12 +236,7 @@
     "studyshots/videoframe_355200.png",
     "studyshots/videoframe_355200.png.crdownload",
     "studyshots/videoframe_314447.png",
-    "studyshots/videoframe_314447.png.crdownload",
     "studyshots/videoframe_306977.png",
-    "studyshots/videoframe_264840.png",
-    "09-intro-to-deep-learning-nn-with-keras/module01/Introduction to Neural Networks and Deep Learning - Cheat Sheet.md",
-    "09-intro-to-deep-learning-nn-with-keras/module01/Introduction to Neural Networks and Deep Learning.md",
-    "09-intro-to-deep-learning-nn-with-keras/module02/Artificial Neural Networks.md",
     "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
     "09-intro-to-deep-learning-nn-with-keras/module05/Course Project - Cheat Sheet.md",
     "09-intro-to-deep-learning-nn-with-keras/module05/Course Project.md",
@@ -238,7 +244,6 @@
     "09-intro-to-deep-learning-nn-with-keras/module04/Deep Learning Models.md",
     "09-intro-to-deep-learning-nn-with-keras/module03/Keras and Deep Learning Libraries - Cheat Sheet.md",
     "09-intro-to-deep-learning-nn-with-keras/module03/Keras and Deep Learning Libraries.md",
-    "09-intro-to-deep-learning-nn-with-keras/module02/Artificial Neural Networks - Cheat Sheet.md",
     "08-machine-learning-with-python/module02/Linear and Logistic Regression.md",
     "08-machine-learning-with-python/module01/Introduction to Machine Learning.md",
     "08-machine-learning-with-python/module05/Evaluating and Validating ML Models.md",
@@ -248,11 +253,6 @@
     "08-machine-learning-with-python/Additional Notes on Bagging and Boosting.md",
     "202502192159.md",
     "08-machine-learning-with-python/Additional Notes on SVM.md",
-    "08-machine-learning-with-python/module02/Linear and Logistic Regression - Cheat Sheet.md",
-    "08-machine-learning-with-python/module03/Building Supervised Learning Models - Cheat Sheet.md",
-    "additional-notes/NumPy shape.md",
-    "07-data-analysis-with-python/module03/Exploratory Data Analysis.md",
-    "07-data-analysis-with-python/module05/Model Evaluation and Refinement.md",
     "Untitled.canvas"
   ]
 }
