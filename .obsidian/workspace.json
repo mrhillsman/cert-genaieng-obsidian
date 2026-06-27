@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ef03021bdd91b778",
+        "id": "1dc2d10c4ad9e207",
         "type": "tabs",
         "children": [
           {
-            "id": "16965ef09d95d0a8",
+            "id": "b568d71922ef8d17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "11-gen-ai-foundation-models-nlp/Converting Words to Features.md",
+                "file": "12-gen-ai-language-modeling-with-transformers/positional-encoding-beginner-notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Converting Words to Features"
+              "title": "positional-encoding-beginner-notes"
             }
           }
         ]
@@ -197,12 +197,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "16965ef09d95d0a8",
+  "active": "b568d71922ef8d17",
   "lastOpenFiles": [
+    "12-gen-ai-language-modeling-with-transformers/Beginner's Guide to Transformer Model Fundamentals.md",
+    "12-gen-ai-language-modeling-with-transformers/positional-encoding-beginner-notes.md",
+    "12-gen-ai-language-modeling-with-transformers/01-positional-encoding.txt",
+    "11-gen-ai-foundation-models-nlp/sequence-to-sequence-rnn-notes.md",
+    "11-gen-ai-foundation-models-nlp/Converting Words to Features.md",
     "11-gen-ai-foundation-models-nlp/gen_ai_nlp_evaluation_metrics_for_nlp_models.pdf",
     "11-gen-ai-foundation-models-nlp/Word2Vec and s2s Models.md",
     "Untitled.md",
-    "11-gen-ai-foundation-models-nlp/Converting Words to Features.md",
     "09-intro-to-deep-learning-nn-with-keras/module02/Artificial Neural Networks.md",
     "09-intro-to-deep-learning-nn-with-keras/module01/Introduction to Neural Networks and Deep Learning.md",
     "09-intro-to-deep-learning-nn-with-keras/module01/Introduction to Neural Networks and Deep Learning - Cheat Sheet.md",
@@ -225,9 +229,7 @@
     "studyshots/videoframe_417919.png",
     "studyshots/videoframe_417919.png.crdownload",
     "studyshots/videoframe_392489.png",
-    "studyshots/videoframe_392489.png.crdownload",
     "studyshots/videoframe_355200.png",
-    "studyshots/videoframe_355200.png.crdownload",
     "studyshots/videoframe_314447.png",
     "studyshots/videoframe_306977.png",
     "08-machine-learning-with-python/module03/Building Supervised Learning Models.md",
@@ -243,8 +245,6 @@
     "08-machine-learning-with-python/module05/Evaluating and Validating ML Models - Cheat Sheet.md",
     "08-machine-learning-with-python/module04/Building Unsupervised Learning Models - Cheat Sheet.md",
     "08-machine-learning-with-python/module04/Building Unsupervised Learning Models.md",
-    "08-machine-learning-with-python/Additional Notes on Bagging and Boosting.md",
-    "202502192159.md",
     "Untitled.canvas"
   ]
 }
