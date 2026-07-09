@@ -1,4 +1,4 @@
-![[Practice-Quiz-Proximal-Policy-Optimization-PPO-Coursera-07-09-2026_00_25.png]]
+![[14-gen-ai-advance-fine-tuning-for-llms/additional-notes/Practice-Quiz-Proximal-Policy-Optimization-PPO-Coursera-07-09-2026_00_25.png]]
 
 The **first option** is the best answer:
 
