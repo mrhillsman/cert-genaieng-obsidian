@@ -1,0 +1,91 @@
+Welcome to PPO trainer. After watching this video, you'll be able to explore
+proximal policy optimization or PPO and the steps to
+initialize PPO configurations. You'll also be able
+to demonstrate how to generate texts with PPO and reference models and explain comparisons
+between models. Let's begin by exploring how to initialize PPO configuration. The PPO config
+class is useful for specifying the model and
+learning rate for PPO training. The model name specifies the model that needs
+to be fine tuned. Lastly, set the learning rate. To load the model and
+the reference model. Use the reference model
+to stabilize training by Kullback-Leibler
+or KL divergence between the current
+policy that is the model and the
+reference policy that is the reference model. AutoModelForCausalLMWithValueHead, extends auto model for causal LM class for
+reinforcement learning. The collateral function
+is crucial for preparing data batches in a format
+suitable for the PPO trainer. It ensures that
+each feature from the data samples is
+grouped together. The output is demonstrated
+with an input toy example. Now, let's understand
+the PPO trainer. The PPO trainer processes query samples and optimizes
+the chatbots policy, handling complex tasks to
+ensure high quality responses. Let's initialize
+PPO trainer with the specified configuration
+and components. First, configure the
+settings for PPO training. Using configuration
+settings such as learning rate and model name. Next, fine tune
+the primary model using PPO and input
+the reference model. Further, input the tokenizer for processing the input text. Next, insert the dataset to provide the input data for
+the model to train it. Lastly, the data
+collator handles the batching and formatting
+of the input data. In PPO, the list stats all stores the training
+statistics for each batch. Set the sentiment
+score change score to 1 to provide a higher reward for positive sentiment
+and encourage the chatbot to generate
+positive responses. On the other hand, setting the sentiment score to zero will increase the chances
+of generating higher reward for
+negative sentiment, resulting in negative responses. The screen displays the
+training loop code for the PPO algorithm using
+sentiment analysis. The training loop
+iterates over batches of data for the PPO trainer
+and data loader. Now perform the following steps. For each number,
+extract input IDs, queries from each batch, and query tensors for each
+query tensor in the batch. Select a random sample output
+length and use it to set the maximum number
+of new tokens to generate a response using
+PPO trainer and store it. Next, append the
+generated response tensor to the response tensors list, trimming it to the
+generated length. Now decode the response tensors to text and add
+them to the batch. Concatenate the query and
+response for each pair to form the text and apply the sentiment analysis pipeline to the texts. Now extract the sentiment score and convert it to a Tensor. Lastly, collect the
+statistics by performing a PPO step with the queries,
+responses, and rewards. Run the training step
+method to train the model. Log the statistics along
+with the batch and rewards and append the statistics
+to the all_stats list. The PPO returns rewards and
+losses to the dictionary. Let's write a function
+to display these values. Setting related to
+objective equals true, helps obtain statistics for optimizing the model parameters, such as model loss
+and value loss. On the other hand, setting related to objects equals false, helps obtain additional metrics relevant to
+reinforcement learning, such as advantage estimates,
+and reward calculations. Now it's time to save the model. Next, plot the graphs for PPO training loss and PPO
+mean reward over time. You can see that the loss
+decreases over time. However, PPO mean reward
+increases over time. Train the model zero with
+negative sentiment by setting the change score
+value to zero for comparison. Next to generate text using
+PPO and reference model, you should allocate
+the device per CPU and GPU availability. Now, define and decode a function for tokenizing
+the input text, generates a response
+using the provided model. You cannot use the text
+generation pipeline with the auto-model for causal
+LM with value head class. You can see the responses from the three models
+using the input text, such as Model 1, which is trained on
+positive sentiments and generates a
+positive response. Model 0 is trained on the negative sentiments and has generated a negative response. However, the reference model or the original model provides
+a neutral response. Now let's compare
+Model 0 and Model 1. The screen displays examples of the generated responses from the positive and negative
+sentiment models with their sentiment scores. You can see that
+the positive model generates a positive
+response and scores. In contrast, the
+negative model generates negative responses and
+scores. Let's recap. In this video, you learned about the PPO configuration and its training using Hugging Face. The PPO config
+class is useful for specifying the model and
+learning rate for PPO training. PPO training updates the model using
+Kullback-Leibler divergence. The collateral function
+is vital for preparing data batches in a format
+suitable for the PPO trainer. The PPO trainer collects dialogue samples and
+optimizes the chatbot policy. In PPO, the list stats_all stores the training
+statistics for each batch. Upon plotting a graph of PPO loss and PPO
+mean reward over time shows that the PPO loss decreases and PPO mean
+reward increases over time.
